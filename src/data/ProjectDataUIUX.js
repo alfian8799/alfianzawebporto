@@ -64,7 +64,6 @@ export const uiUxProjectsData = {
     stack: ["Figma", "FigJam"],
     keywords: ["app", "game", "UI/UX"],
     gallery: [
-      "/images/projects/mengajiiqro/mengajiiqro.webp",
       "/images/projects/mengajiiqro/mengajiiqro1.webp",
       "/images/projects/mengajiiqro/mengajiiqro2.webp",
       "/images/projects/mengajiiqro/mengajiiqro3.webp",
@@ -88,9 +87,15 @@ export const uiUxProjectsData = {
             en: "The interface is designed to be easy for children to understand, using cheerful visuals, large touch targets, and audio-visual feedback to support learning.",
           },
           items: [
-            { id: "Strategi gamifikasi dan alur belajar.", en: "Gamification strategy and learning loops." },
+            {
+              id: "Strategi gamifikasi dan alur belajar.",
+              en: "Gamification strategy and learning loops.",
+            },
             { id: "Desain UI ramah anak.", en: "Child-friendly UI design." },
-            { id: "Prototipe interaksi audio-visual.", en: "Audio-visual interaction prototyping." },
+            {
+              id: "Prototipe interaksi audio-visual.",
+              en: "Audio-visual interaction prototyping.",
+            },
           ],
         },
       ],
@@ -110,7 +115,10 @@ export const uiUxProjectsData = {
           },
         },
         {
-          heading: { id: "Prototipe Audio-Visual", en: "Audio-Visual Prototype" },
+          heading: {
+            id: "Prototipe Audio-Visual",
+            en: "Audio-Visual Prototype",
+          },
           body: {
             id: "Menyusun interaksi pelafalan dan umpan balik visual, termasuk lencana untuk menandai progres belajar.",
             en: "Prototyped pronunciation interactions and visual feedback, including badges to indicate learning progress.",
@@ -173,20 +181,14 @@ export const uiUxProjectsData = {
       "Interactive checkout",
     ],
     repo: "#",
-    demo: "#",
+    demo: "https://www.figma.com/proto/joZASe60BB0rbcYX1KF8xP/Web-Sepatu-Elevated-Soles?node-id=2202-12373&viewport=365%2C1161%2C0.18&t=7X7bCH1VGubSOdVS-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2202%3A12373&page-id=2202%3A10770",
     tags: ["Figma", "UI/UX", "E-Commerce"],
     stack: ["Figma", "Design System"],
     keywords: ["UI/UX", "Web"],
     gallery: [
-      "/images/projects/elevatedsoles/elevated.webp",
       "/images/projects/elevatedsoles/elevated1.webp",
       "/images/projects/elevatedsoles/elevated2.webp",
       "/images/projects/elevatedsoles/elevated3.webp",
-      "/images/projects/elevatedsoles/elevated4.webp",
-      "/images/projects/elevatedsoles/elevated5.webp",
-      "/images/projects/elevatedsoles/elevated6.webp",
-      "/images/projects/elevatedsoles/elevated7.webp",
-      "/images/projects/elevatedsoles/elevated8.webp",
     ],
     uxCaseStudy: {
       sections: [
@@ -205,14 +207,20 @@ export const uiUxProjectsData = {
           },
           items: [
             { id: "Sistem desain UI/UX.", en: "UI/UX design system." },
-            { id: "Alur checkout e-commerce.", en: "E-commerce checkout flow." },
+            {
+              id: "Alur checkout e-commerce.",
+              en: "E-commerce checkout flow.",
+            },
             { id: "Prototipe interaktif.", en: "Interactive prototyping." },
           ],
         },
       ],
       process: [
         {
-          heading: { id: "Wireframe & Desain Visual", en: "Wireframes & Visual Design" },
+          heading: {
+            id: "Wireframe & Desain Visual",
+            en: "Wireframes & Visual Design",
+          },
           body: {
             id: "Merancang struktur halaman dan antarmuka high-fidelity untuk pengalaman belanja sepatu premium.",
             en: "Designed page structures and high-fidelity interfaces for a premium footwear shopping experience.",
@@ -226,7 +234,10 @@ export const uiUxProjectsData = {
           },
         },
         {
-          heading: { id: "Design System & Prototipe", en: "Design System & Prototype" },
+          heading: {
+            id: "Design System & Prototipe",
+            en: "Design System & Prototype",
+          },
           body: {
             id: "Mendefinisikan token warna, tipografi, variasi komponen, dan status tombol, lalu merangkainya dalam prototipe interaktif.",
             en: "Defined color tokens, typography, component variants, and button states, then connected them in an interactive prototype.",
@@ -300,10 +311,16 @@ export const uiUxProjectsData = {
     stack: ["Figma", "FigJam", "Miro", "Gemini AI"],
     keywords: ["app", "UI/UX"],
     gallery: [
-      "/images/projects/lokaway/lokaway.webp",
       "/images/projects/lokaway/lokaway1.webp",
       "/images/projects/lokaway/lokaway2.webp",
       "/images/projects/lokaway/lokaway3.webp",
+      "/images/projects/lokaway/lokaway4.webp",
+      "/images/projects/lokaway/lokaway5.webp",
+      "/images/projects/lokaway/lokaway6.webp",
+      "/images/projects/lokaway/lokaway7.webp",
+      "/images/projects/lokaway/lokaway8.webp",
+      "/images/projects/lokaway/lokaway9.webp",
+      "/images/projects/lokaway/lokaway10.webp",
     ],
     uxCaseStudy: {
       period: {
@@ -399,7 +416,10 @@ export const uiUxProjectsData = {
           ],
         },
         {
-          heading: { id: "Tujuan Produk & Objektif", en: "Product Goal & Objectives" },
+          heading: {
+            id: "Tujuan Produk & Objektif",
+            en: "Product Goal & Objectives",
+          },
           body: {
             id: "Tujuannya adalah menjadikan Lokaway aplikasi all-inclusive utama yang mengurangi kecemasan sebelum dan selama perjalanan, serta menyederhanakan pemesanan dari banyak langkah menjadi satu alur linier yang tepercaya.",
             en: "The goal is to make Lokaway a leading all-inclusive app that reduces anxiety before and during travel and simplifies booking from many steps into one trustworthy linear flow.",
@@ -446,7 +466,10 @@ export const uiUxProjectsData = {
             },
           ],
           resource: {
-            label: { id: "Lihat papan riset di Miro", en: "View research board on Miro" },
+            label: {
+              id: "Lihat papan riset di Miro",
+              en: "View research board on Miro",
+            },
             url: "https://miro.com/app/board/uXjVEegH_2A=/?share_link_id=532984448281",
           },
         },
@@ -569,7 +592,10 @@ export const uiUxProjectsData = {
             en: "The interactive prototype simulates searching all-inclusive packages, reviewing a unified itinerary, completing a single checkout with transparent pricing, and receiving e-tickets after payment.",
           },
           resource: {
-            label: { id: "Coba prototipe Lokaway di Figma", en: "Explore the Lokaway prototype on Figma" },
+            label: {
+              id: "Coba prototipe Lokaway di Figma",
+              en: "Explore the Lokaway prototype on Figma",
+            },
             url: "https://www.figma.com/proto/Jka06lloCcNzgG1datapER/Lokaway-Travel-app?node-id=4027-10441&viewport=535%2C192%2C0.1&t=p7SyLjY3FWg5vuBi-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4027%3A10441&page-id=2004%3A1735",
           },
         },
@@ -643,12 +669,16 @@ export const uiUxProjectsData = {
     stack: ["Figma", "FigJam", "Miro", "Gemini AI"],
     keywords: ["app", "UI/UX"],
     gallery: [
-      "/images/projects/noizumusic/noizumusic.webp",
       "/images/projects/noizumusic/noizumusic1.webp",
       "/images/projects/noizumusic/noizumusic2.webp",
       "/images/projects/noizumusic/noizumusic3.webp",
       "/images/projects/noizumusic/noizumusic4.webp",
       "/images/projects/noizumusic/noizumusic5.webp",
+      "/images/projects/noizumusic/noizumusic6.webp",
+      "/images/projects/noizumusic/noizumusic7.webp",
+      "/images/projects/noizumusic/noizumusic8.webp",
+      "/images/projects/noizumusic/noizumusic9.webp",
+      "/images/projects/noizumusic/noizumusic10.webp",
     ],
     uxCaseStudy: {
       period: {
@@ -677,9 +707,18 @@ export const uiUxProjectsData = {
             en: "Research identified three key user barriers that shaped the Noizu Music solution:",
           },
           items: [
-            { id: "Friksi autentikasi: pengguna gagal masuk atau mendaftar meskipun kredensial yang dimasukkan sudah benar.", en: "Authentication friction: users can fail to sign in or register even when their credentials are correct." },
-            { id: "Missing lyrics: lirik lagu populer maupun lagu klasik tidak tersedia atau hilang.", en: "Missing lyrics: lyrics for popular and classic tracks are unavailable or disappear." },
-            { id: "Paywall & forced shuffle: pengguna tidak bebas memilih lagu secara on-demand dan kehilangan kendali atas playlist pribadi.", en: "Paywalls and forced shuffle: users cannot freely select tracks on demand and lose control of personal playlists." },
+            {
+              id: "Friksi autentikasi: pengguna gagal masuk atau mendaftar meskipun kredensial yang dimasukkan sudah benar.",
+              en: "Authentication friction: users can fail to sign in or register even when their credentials are correct.",
+            },
+            {
+              id: "Missing lyrics: lirik lagu populer maupun lagu klasik tidak tersedia atau hilang.",
+              en: "Missing lyrics: lyrics for popular and classic tracks are unavailable or disappear.",
+            },
+            {
+              id: "Paywall & forced shuffle: pengguna tidak bebas memilih lagu secara on-demand dan kehilangan kendali atas playlist pribadi.",
+              en: "Paywalls and forced shuffle: users cannot freely select tracks on demand and lose control of personal playlists.",
+            },
           ],
         },
         {
@@ -690,7 +729,10 @@ export const uiUxProjectsData = {
           },
         },
         {
-          heading: { id: "Arah Solusi & Objektif", en: "Solution Direction & Objectives" },
+          heading: {
+            id: "Arah Solusi & Objektif",
+            en: "Solution Direction & Objectives",
+          },
           body: {
             id: "Solusi berfokus pada tiga objektif: memangkas waktu login melalui Single Sign-On, menyediakan lirik Kanji/Kana, Romaji, dan terjemahan Inggris secara gratis, serta memberikan kebebasan untuk menyusun dan memutar lagu sesuai urutan pilihan.",
             en: "The solution focused on three objectives: reduce sign-in time through Single Sign-On, provide free Kanji/Kana, Romaji, and English lyrics, and let users arrange and play tracks in their chosen order.",
@@ -699,15 +741,27 @@ export const uiUxProjectsData = {
       ],
       process: [
         {
-          heading: { id: "Riset & Analisis Ulasan", en: "Research & Review Analysis" },
+          heading: {
+            id: "Riset & Analisis Ulasan",
+            en: "Research & Review Analysis",
+          },
           body: {
             id: "Riset sekunder menggunakan Competitive App Review Analysis untuk memahami masalah dan perilaku pengguna saat mencari serta mendengarkan musik. Ulasan organik di Play Store memperlihatkan pola kesulitan autentikasi, akses lirik, dan hilangnya kontrol akibat paywall serta forced shuffle.",
             en: "Secondary research used Competitive App Review Analysis to understand user needs and behavior when searching for and listening to music. Organic Play Store reviews revealed patterns around authentication, lyrics access, and loss of control caused by paywalls and forced shuffle.",
           },
           items: [
-            { id: "Login atau registrasi dapat bermasalah meskipun kredensial sudah benar.", en: "Login or registration can fail even when credentials are correct." },
-            { id: "Lirik lagu populer maupun klasik tidak selalu tersedia.", en: "Lyrics for popular and classic songs are not always available." },
-            { id: "Paywall dan forced shuffle membatasi kebebasan mendengarkan.", en: "Paywalls and forced shuffle restrict listening freedom." },
+            {
+              id: "Login atau registrasi dapat bermasalah meskipun kredensial sudah benar.",
+              en: "Login or registration can fail even when credentials are correct.",
+            },
+            {
+              id: "Lirik lagu populer maupun klasik tidak selalu tersedia.",
+              en: "Lyrics for popular and classic songs are not always available.",
+            },
+            {
+              id: "Paywall dan forced shuffle membatasi kebebasan mendengarkan.",
+              en: "Paywalls and forced shuffle restrict listening freedom.",
+            },
           ],
         },
         {
@@ -717,9 +771,18 @@ export const uiUxProjectsData = {
             en: "Aditya Pratama, 21, is a university student and freelance graphic designer living in Surabaya. A devoted anime and J-Pop fan, he listens to music for hours to stay focused while working or studying.",
           },
           items: [
-            { id: "Tujuan: menemukan OST anime orisinal dengan cepat dan akurat.", en: "Goal: find original anime OSTs quickly and accurately." },
-            { id: "Tujuan: membaca transliterasi Romaji agar dapat memahami dan ikut bernyanyi.", en: "Goal: read Romaji transliteration to understand and sing along." },
-            { id: "Frustrasi: forced shuffle, pencarian lagu Jepang yang tidak akurat, paywall, serta lagu cover yang disangka OST orisinal.", en: "Frustrations: forced shuffle, inaccurate Japanese-song search, paywalls, and cover songs mistaken for original OSTs." },
+            {
+              id: "Tujuan: menemukan OST anime orisinal dengan cepat dan akurat.",
+              en: "Goal: find original anime OSTs quickly and accurately.",
+            },
+            {
+              id: "Tujuan: membaca transliterasi Romaji agar dapat memahami dan ikut bernyanyi.",
+              en: "Goal: read Romaji transliteration to understand and sing along.",
+            },
+            {
+              id: "Frustrasi: forced shuffle, pencarian lagu Jepang yang tidak akurat, paywall, serta lagu cover yang disangka OST orisinal.",
+              en: "Frustrations: forced shuffle, inaccurate Japanese-song search, paywalls, and cover songs mistaken for original OSTs.",
+            },
           ],
         },
         {
@@ -729,10 +792,22 @@ export const uiUxProjectsData = {
             en: "The journey map follows Aditya as he searches for a recent anime opening, verifies it is original, reads Romaji lyrics to sing along, then saves it to a playlist for studying. It highlights friction, emotions, and opportunities throughout the experience.",
           },
           items: [
-            { id: "Onboarding & autentikasi: pengguna ingin masuk dengan cepat tanpa kendala kredensial.", en: "Onboarding and authentication: users need a quick sign-in without credential errors." },
-            { id: "Search & discovery: pengguna mencari dengan Romaji dan perlu memastikan lagu yang ditemukan adalah versi resmi.", en: "Search and discovery: users search in Romaji and need to confirm a track is the official version." },
-            { id: "Playback & lyrics: pengguna ingin memahami lagu dengan lirik multibahasa tanpa paywall.", en: "Playback and lyrics: users want to understand songs through multilingual lyrics without a paywall." },
-            { id: "Library & playlist: pengguna ingin memutar playlist berurutan tanpa lagu asing yang disisipkan.", en: "Library and playlist: users want to play tracks sequentially without unwanted additions." },
+            {
+              id: "Onboarding & autentikasi: pengguna ingin masuk dengan cepat tanpa kendala kredensial.",
+              en: "Onboarding and authentication: users need a quick sign-in without credential errors.",
+            },
+            {
+              id: "Search & discovery: pengguna mencari dengan Romaji dan perlu memastikan lagu yang ditemukan adalah versi resmi.",
+              en: "Search and discovery: users search in Romaji and need to confirm a track is the official version.",
+            },
+            {
+              id: "Playback & lyrics: pengguna ingin memahami lagu dengan lirik multibahasa tanpa paywall.",
+              en: "Playback and lyrics: users want to understand songs through multilingual lyrics without a paywall.",
+            },
+            {
+              id: "Library & playlist: pengguna ingin memutar playlist berurutan tanpa lagu asing yang disisipkan.",
+              en: "Library and playlist: users want to play tracks sequentially without unwanted additions.",
+            },
           ],
         },
         {
@@ -742,9 +817,18 @@ export const uiUxProjectsData = {
             en: "Research and journey-map insights were translated into How Might We questions, turning pain points into design opportunities.",
           },
           items: [
-            { id: "Bagaimana kita dapat merancang alur Sign Up dan Sign In yang intuitif, minim friksi, dan memberikan informasi galat dengan jelas?", en: "How might we design intuitive, low-friction sign-up and sign-in flows with clear error feedback?" },
-            { id: "Bagaimana kita dapat menghadirkan lirik yang komprehensif agar pengguna mudah memahami dan menyanyikan lagu?", en: "How might we provide comprehensive lyrics that help users understand and sing along?" },
-            { id: "Bagaimana kita dapat menjamin kebebasan on-demand playback serta kendali penuh atas playlist dan library?", en: "How might we ensure on-demand playback and return full control of playlists and libraries to users?" },
+            {
+              id: "Bagaimana kita dapat merancang alur Sign Up dan Sign In yang intuitif, minim friksi, dan memberikan informasi galat dengan jelas?",
+              en: "How might we design intuitive, low-friction sign-up and sign-in flows with clear error feedback?",
+            },
+            {
+              id: "Bagaimana kita dapat menghadirkan lirik yang komprehensif agar pengguna mudah memahami dan menyanyikan lagu?",
+              en: "How might we provide comprehensive lyrics that help users understand and sing along?",
+            },
+            {
+              id: "Bagaimana kita dapat menjamin kebebasan on-demand playback serta kendali penuh atas playlist dan library?",
+              en: "How might we ensure on-demand playback and return full control of playlists and libraries to users?",
+            },
           ],
         },
         {
@@ -754,10 +838,22 @@ export const uiUxProjectsData = {
             en: "Solution ideas were evaluated with a Priority Matrix based on user impact and implementation feasibility to define the Minimum Viable Product (MVP) scope.",
           },
           items: [
-            { id: "Critical: Google SSO, toggle bahasa lirik, dan tombol Forgot Password.", en: "Critical: Google SSO, lyrics-language toggle, and Forgot Password." },
-            { id: "High Value: lirik multibahasa serta manajemen library dan playlist responsif.", en: "High value: multilingual lyrics and responsive library and playlist management." },
-            { id: "Nice to Have: error state login yang spesifik, pemutaran linear, dan opsi pengaturan track.", en: "Nice to have: specific login error states, sequential playback, and track-management options." },
-            { id: "Future / Potential: lirik tersinkronisasi dengan audio.", en: "Future / potential: lyrics synchronized with audio." },
+            {
+              id: "Critical: Google SSO, toggle bahasa lirik, dan tombol Forgot Password.",
+              en: "Critical: Google SSO, lyrics-language toggle, and Forgot Password.",
+            },
+            {
+              id: "High Value: lirik multibahasa serta manajemen library dan playlist responsif.",
+              en: "High value: multilingual lyrics and responsive library and playlist management.",
+            },
+            {
+              id: "Nice to Have: error state login yang spesifik, pemutaran linear, dan opsi pengaturan track.",
+              en: "Nice to have: specific login error states, sequential playback, and track-management options.",
+            },
+            {
+              id: "Future / Potential: lirik tersinkronisasi dengan audio.",
+              en: "Future / potential: lyrics synchronized with audio.",
+            },
           ],
         },
         {
@@ -767,10 +863,22 @@ export const uiUxProjectsData = {
             en: "User flows mapped how people complete key tasks in Noizu Music based on research, ideation, and feature priorities.",
           },
           items: [
-            { id: "Autentikasi: splash screen → halaman sambutan → Sign In/Sign Up atau Google SSO → verifikasi → Home.", en: "Authentication: splash screen → welcome → sign in/sign up or Google SSO → verification → home." },
-            { id: "Eksplorasi & pencarian: Home → Search → masukkan judul dengan Romaji → hasil dwibahasa dan Official Badge → pilih lagu.", en: "Discovery and search: home → search → enter a Romaji title → bilingual results and Official Badge → select a track." },
-            { id: "Pemutaran & lirik: pilih lagu → pemutar utama → buka lirik → pilih Kanji/Kana, Romaji, atau terjemahan Inggris.", en: "Playback and lyrics: select a track → player → open lyrics → choose Kanji/Kana, Romaji, or English translation." },
-            { id: "Library & playlist: buka Library → pilih playlist → tambah, kelola, atau atur urutan lagu → putar secara berurutan.", en: "Library and playlists: open library → choose a playlist → add, manage, or reorder tracks → play sequentially." },
+            {
+              id: "Autentikasi: splash screen → halaman sambutan → Sign In/Sign Up atau Google SSO → verifikasi → Home.",
+              en: "Authentication: splash screen → welcome → sign in/sign up or Google SSO → verification → home.",
+            },
+            {
+              id: "Eksplorasi & pencarian: Home → Search → masukkan judul dengan Romaji → hasil dwibahasa dan Official Badge → pilih lagu.",
+              en: "Discovery and search: home → search → enter a Romaji title → bilingual results and Official Badge → select a track.",
+            },
+            {
+              id: "Pemutaran & lirik: pilih lagu → pemutar utama → buka lirik → pilih Kanji/Kana, Romaji, atau terjemahan Inggris.",
+              en: "Playback and lyrics: select a track → player → open lyrics → choose Kanji/Kana, Romaji, or English translation.",
+            },
+            {
+              id: "Library & playlist: buka Library → pilih playlist → tambah, kelola, atau atur urutan lagu → putar secara berurutan.",
+              en: "Library and playlists: open library → choose a playlist → add, manage, or reorder tracks → play sequentially.",
+            },
           ],
         },
         {
@@ -780,9 +888,18 @@ export const uiUxProjectsData = {
             en: "Wireframes established page structure, information hierarchy, component layout, and fundamental interactions before high-fidelity design.",
           },
           items: [
-            { id: "Mencakup onboarding, Sign In, Sign Up, dan pemilihan metode masuk.", en: "Covered onboarding, sign in, sign up, and sign-in method selection." },
-            { id: "Menyusun halaman Home, Search, hasil pencarian, pemutar lagu, lirik, dan berbagi.", en: "Outlined home, search, search results, player, lyrics, and sharing screens." },
-            { id: "Merancang halaman Library, playlist, profil, dan pengaturan audio.", en: "Designed library, playlist, profile, and audio-settings screens." },
+            {
+              id: "Mencakup onboarding, Sign In, Sign Up, dan pemilihan metode masuk.",
+              en: "Covered onboarding, sign in, sign up, and sign-in method selection.",
+            },
+            {
+              id: "Menyusun halaman Home, Search, hasil pencarian, pemutar lagu, lirik, dan berbagi.",
+              en: "Outlined home, search, search results, player, lyrics, and sharing screens.",
+            },
+            {
+              id: "Merancang halaman Library, playlist, profil, dan pengaturan audio.",
+              en: "Designed library, playlist, profile, and audio-settings screens.",
+            },
           ],
         },
         {
@@ -806,7 +923,10 @@ export const uiUxProjectsData = {
             en: "The interactive prototype demonstrates the end-to-end experience, from authentication and Romaji search with an Official Badge to playback, lyrics controls, and playlist management.",
           },
           resource: {
-            label: { id: "Coba prototipe Noizu Music di Figma", en: "Explore the Noizu Music prototype on Figma" },
+            label: {
+              id: "Coba prototipe Noizu Music di Figma",
+              en: "Explore the Noizu Music prototype on Figma",
+            },
             url: "https://www.figma.com/proto/8HUwCBEXgjfhMbOcgnNM7z/Noizu-Music?node-id=6739-10839&viewport=4673%2C180%2C1.16&t=BtekUnkcdYBkbXp6-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6739%3A10839&page-id=6739%3A9309",
           },
         },

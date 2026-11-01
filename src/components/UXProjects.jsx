@@ -7,7 +7,7 @@ import { useLanguage } from "../context/LanguageContext";
 import {
   uiUxPortfolioContent,
   uiUxProjectsData,
-} from "../data/uiUxProjectsData";
+} from "../data/ProjectDataUIUX";
 
 const uxProjects = [
   uiUxProjectsData.lokaway,

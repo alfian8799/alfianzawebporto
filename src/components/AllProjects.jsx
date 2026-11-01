@@ -19,7 +19,6 @@ export const AllProjects = () => {
     offset: ["start end", "end start"],
   });
   const lineWidth = useTransform(scrollYProgress, [0, 0.4], ["0%", "100%"]);
-  const scaleImage = useTransform(scrollYProgress, [0.1, 0.5], [1.12, 1]);
 
   const filters = [
     { key: "All", label: lang === "en" ? "All" : "Semua" },
@@ -119,12 +118,11 @@ export const AllProjects = () => {
                 className="flex flex-col h-full p-5 rounded-3xl bg-zinc-50/70 dark:bg-zinc-900/50 border border-zinc-200/80 dark:border-zinc-800/80 group-hover:border-[#ff4a22]/40 dark:group-hover:border-[#ff4a22]/40 transition-all duration-300 shadow-xs hover:shadow-xl hover:shadow-[#ff4a22]/5"
               >
                 {/* Image Container with Floating Action Badge */}
-                <div className="aspect-16/10 rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-800 mb-5 relative shadow-sm group-hover:shadow-lg transition-all duration-500 shrink-0">
-                  <motion.img
+                <div className="rounded-2xl overflow-hidden bg-zinc-100 dark:bg-zinc-800 mb-5 relative shadow-sm group-hover:shadow-lg transition-all duration-500 shrink-0">
+                  <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover object-center origin-center transition-transform duration-700 ease-out group-hover:scale-105"
-                    style={{ scale: scaleImage }}
+                    className="block h-auto w-full object-contain"
                     onError={(e) => (e.currentTarget.onerror = null)}
                   />
 

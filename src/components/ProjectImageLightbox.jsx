@@ -2,8 +2,13 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { Maximize2, Minimize2, X } from "lucide-react";
 
-export const ProjectImageLightbox = ({ image, lang, onClose }) => {
-  const [isFullView, setIsFullView] = useState(false);
+export const ProjectImageLightbox = ({
+  image,
+  lang,
+  onClose,
+  fullViewOnOpen = false,
+}) => {
+  const [isFullView, setIsFullView] = useState(fullViewOnOpen);
 
   useEffect(() => {
     if (!image) return undefined;

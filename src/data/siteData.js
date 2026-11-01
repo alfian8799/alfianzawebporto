@@ -13,7 +13,7 @@ export const siteData = {
       subtitle: 'Insinyur Perangkat Lunak & Pengembang Web',
       roleLine: 'Desainer UI/UX + Pengembang Web + Pengembang Gim',
     },
-    image: '/images/hero/fotoVian.webp',
+    image: '/images/projects/fotoVian.webp',
   },
 
   // About Section
@@ -124,7 +124,7 @@ export const siteData = {
         link: 'https://www.linkedin.com/in/alfianzarif/edit/forms/position/2630391084/',
       },
     ],
-    image: '/images/hero/fotoVian.webp',
+    image: '/images/projects/fotoVian.webp',
   },
 
   // Services Section

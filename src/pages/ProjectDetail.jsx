@@ -141,13 +141,13 @@ const ProjectDetail = () => {
                 ? `View ${project.title} image`
                 : `Lihat gambar ${project.title}`
             }
-            className="group relative mb-16 block aspect-[16/9] w-full cursor-zoom-in overflow-hidden rounded-2xl text-left md:aspect-[21/9]"
+            className="group relative mb-16 flex w-full cursor-zoom-in justify-center overflow-hidden rounded-2xl bg-zinc-100 text-left dark:bg-zinc-900"
           >
             <img
               src={project.image || "/images/placeholder.webp"}
               alt={project.title}
               onError={handleImageError}
-              className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-700 ease-out"
+              className="block h-auto max-h-[80vh] max-w-full w-auto object-contain"
             />
           </button>
         </FadeIn>
@@ -285,14 +285,14 @@ const ProjectDetail = () => {
                             ? `View project image ${i + 1}`
                             : `Lihat gambar proyek ${i + 1}`
                         }
-                        className="group block aspect-video w-full cursor-zoom-in overflow-hidden rounded-2xl text-left"
+                        className="group block w-full cursor-zoom-in overflow-hidden rounded-2xl bg-zinc-100 text-left dark:bg-zinc-900"
                       >
                         <img
                           src={imgUrl}
                           alt={`${project.title} showcase image ${i + 1}`}
                           loading="lazy"
                           onError={handleImageError}
-                          className="w-full h-full object-cover group-hover:scale-[1.01] transition-transform duration-500"
+                          className="block h-auto w-full object-contain transition-transform duration-500"
                         />
                       </button>
                     ))}
@@ -325,13 +325,13 @@ const ProjectDetail = () => {
                   to={`/projects/${key}`}
                   className="group block transition-colors duration-300"
                 >
-                  <div className="relative mb-4 aspect-[16/10] overflow-hidden rounded-2xl">
+                  <div className="relative mb-4 overflow-hidden rounded-2xl bg-zinc-100 dark:bg-zinc-900">
                     <img
                       src={p.image || "/images/placeholder.webp"}
                       alt={p.title}
                       loading="lazy"
                       onError={handleImageError}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      className="block h-auto w-full object-contain"
                     />
                     <div className="absolute top-3 right-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
                       <ArrowUpRight className="w-4 h-4" />

@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { certificatesData } from "../data/certificatesData";
 import { FadeIn } from "./FadeIn";
+import { ProjectImageLightbox } from "./ProjectImageLightbox";
 import { useLanguage, t } from "../context/LanguageContext";
 
 export const CertificationMarquee = () => {
   const { lang } = useLanguage();
+  const [selectedCertificate, setSelectedCertificate] = useState(null);
 
   // Lipat gandakan data untuk memuluskan animasi scrolling tak berujung (infinite loop)
   const tripledCerts = [
@@ -54,24 +57,25 @@ export const CertificationMarquee = () => {
         >
           {tripledCerts.map((cert, idx) => (
             <a
-              key={idx}
-              href={cert.credentialUrl !== "#" ? cert.credentialUrl : undefined}
-              target="_blank"
-              rel="noopener noreferrer"
+              key={`${cert.id}-${idx}`}
+              href={cert.image}
+              aria-label={`${cert.title} by ${cert.issuer} — ${lang === "en" ? "view certificate image" : "lihat gambar sertifikat"}`}
+              onClick={(event) => {
+                event.preventDefault();
+                setSelectedCertificate({
+                  src: cert.image,
+                  alt: `${cert.title} by ${cert.issuer}`,
+                });
+              }}
               className="flex flex-col w-85 md:w-105 bg-zinc-900/60 hover:bg-zinc-900/90 border border-zinc-800 hover:border-[#ff4a22]/40 rounded-2xl p-4 shrink-0 transition-all duration-300 group shadow-2xl relative overflow-hidden"
             >
-              {/* Box Gambar Sertifikat Terlihat Utuh */}
-              <div className="w-full aspect-16/10 bg-zinc-950 rounded-xl overflow-hidden border border-zinc-800/80 mb-5 relative group-hover:scale-[1.01] transition-transform duration-300">
+              <div className="mb-5 w-full overflow-hidden rounded-xl">
                 <img
                   src={cert.image}
                   alt={`${cert.title} by ${cert.issuer}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  onError={(e) => {
-                    e.target.src = "/images/fallback-placeholder.jpg"; // Pasang gambar fallback bila terjadi kendala pemuatan
-                  }}
+                  loading="lazy"
+                  className="block h-auto w-full"
                 />
-                {/* Efek Hover Glass / Highlight Overlay */}
-                <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
               </div>
 
               {/* Detail Konten Info */}
@@ -97,6 +101,13 @@ export const CertificationMarquee = () => {
           ))}
         </motion.div>
       </div>
+      <ProjectImageLightbox
+        key={selectedCertificate?.src || "closed"}
+        image={selectedCertificate}
+        lang={lang}
+        onClose={() => setSelectedCertificate(null)}
+        fullViewOnOpen
+      />
     </section>
   );
 };
