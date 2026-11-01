@@ -1,5 +1,5 @@
 export const gameProjectRecords = {
-  immunoblitz: {
+immunoblitz: {
     slug: "immunoblitz",
     title: "Immuno Blitz",
     subtitle: "2D Defense Arcade Game",
@@ -11,35 +11,36 @@ export const gameProjectRecords = {
     midImage: "/images/projects/immunoblitz/immunoblitz.webp",
     desc: {
       en: "An arcade defense game built with Godot Engine focusing on immune cell combat mechanics.",
-      id: "Gim pertahanan arkade yang dibuat dengan Godot Engine berfokus pada mekanik pertempuran sel imun.",
+      id: "Gim pertahanan arkade yang dibangun dengan Godot Engine dan berfokus pada mekanik pertempuran sel imun.",
     },
     overview: {
       en: "Immuno Blitz expands on biological defense themes. Developed over an extended period using Godot Engine and GDScript, featuring custom UI elements and wave-based survival mechanics.",
-      id: "Immuno Blitz mengembangkan tema pertahanan biologis. Dikembangkan menggunakan Godot Engine dan GDScript dengan elemen UI kustom serta mekanik bertahan hidup berbasis gelombang musuh.",
+      id: "Immuno Blitz mengangkat tema pertahanan biologis. Dikembangkan menggunakan Godot Engine dan GDScript, lengkap dengan elemen antarmuka kustom serta mekanik bertahan hidup berbasis gelombang musuh.",
     },
     overviewDetail: {
-      en: "Handled full development lifecycle including Godot node structure, UI layouting in Figma, enemy AI pathfinding, and wave difficulty scaling.",
-      id: "Menangani siklus pengembangan penuh meliputi struktur node Godot, tata letak UI di Figma, AI musuh, serta skala kesulitan gelombang.",
+      en: "Handled development lifecycle including game design, UI design, UI prototyping in Figma, and UI implementation in Godot Engine.",
+      id: "Menangani siklus pengembangan mulai dari desain gim, desain UI, pembuatan prototipe UI di Figma, hingga implementasi UI ke dalam Godot Engine.",
     },
     scopeOfWork: {
       en: [
-        "Full-Stack Game Development",
-        "Godot Architecture & GDScript",
+        "Game Development",
         "UI/UX Interface Design",
+        "Godot UI Implementation",
       ],
       id: [
-        "Pengembangan Gim Full-Stack",
-        "Arsitektur Godot & GDScript",
+        "Pengembangan Gim",
         "Desain Antarmuka UI/UX",
+        "Implementasi UI Godot",
       ],
     },
     outcome: {
-      en: "Published game build on Itch.io demonstrating versatility across game engines (Unity & Godot).",
-      id: "Rilisan gim di Itch.io yang membuktikan fleksibilitas lintas engine gim (Unity & Godot).",
+      en: "Published a playable game build on Itch.io demonstrating versatility across game engines.",
+      id: "Merilis gim yang dapat dimainkan di platform Itch.io, menunjukkan fleksibilitas dalam penggunaan mesin gim.",
     },
     features: ["Wave survival", "Custom Godot UI", "Enemy AI logic"],
     repo: "#",
-    demo: "https://vianz-project.itch.io/immuno-blitz",
+    game: "https://vianz-project.itch.io/immuno-blitz",
+    demo: "#",
     tags: ["Godot", "GDScript", "Figma", "2D Game"],
     stack: ["Godot", "GDScript", "Figma"],
     keywords: ["game", "UI/UX"],
@@ -50,7 +51,14 @@ export const gameProjectRecords = {
     ],
   },
 
-  kulimadness: {
+
+
+
+
+
+
+
+kulimadness: {
     slug: "kulimadness",
     title: "Kuli Madness",
     subtitle: "3D Casual Arcade Game",
@@ -61,16 +69,16 @@ export const gameProjectRecords = {
     image: "/images/projects/kulimadness/kulimadness.webp",
     midImage: "/images/projects/kulimadness/kulimadness.webp",
     desc: {
-      en: "A hilarious 3D casual arcade game portraying the chaotic daily life of construction workers.",
-      id: "Gim arkade kasual 3D yang kocak, menggambarkan kekacauan kehidupan sehari-hari kuli bangunan.",
+      en: "A 3D casual arcade game depicting the chaotic daily life of a construction worker. Players take on the role of a construction worker tasked with catching falling bags of cement.",
+      id: "Gim arkade kasual 3D yang menggambarkan kekacauan kehidupan sehari-hari kuli bangunan. Pemain berperan sebagai seorang pekerja konstruksi yang bertugas menangkap kantong semen yang jatuh.",
     },
     overview: {
-      en: "Kuli Madness is a 3D casual game designed for Windows PC. It combines slapstick humor with time-management mechanics, featuring custom 3D low-poly models and intuitive game UI.",
+      en: "Kuli Madness is a 3D casual game for Windows PC, combining physical humor with time-management mechanics, featuring custom low-poly 3D models and an intuitive game UI.",
       id: "Kuli Madness adalah gim kasual 3D untuk PC Windows. Menggabungkan humor fisik dengan mekanik manajemen waktu, dilengkapi model 3D low-poly kustom dan UI gim yang intuitif.",
     },
     overviewDetail: {
-      en: "Created 3D environmental assets and character props using Blender, managed design documentations in Notion, and prototyped game HUD & menus in Figma.",
-      id: "Membuat aset lingkungan 3D dan prop karakter menggunakan Blender, mengelola dokumentasi desain di Notion, serta merancang HUD & menu gim di Figma.",
+      en: "Created 3D characters and assets using Blender, handled game design, and designed the UI/HUD in Figma.",
+      id: "Membuat karakter dan aset 3D menggunakan Blender, menyusun desain gim, serta merancang UI dan HUD gim di Figma.",
     },
     scopeOfWork: {
       en: [
@@ -84,13 +92,14 @@ export const gameProjectRecords = {
         "Dokumentasi Desain Gim",
       ],
     },
-    outcome: {
-      en: "Produced a fun, low-poly 3D game prototype with distinct local humor and cohesive visual design.",
-      id: "Menghasilkan prototipe gim 3D low-poly yang unik dengan humor lokal yang menghibur dan desain visual kohesif.",
+  outcome: {
+      en: "Successfully launched a playable 3D game build on Itch.io, delivering a fun, low-poly experience with distinct local humor and cohesive visual design.",
+      id: "Berhasil merilis versi gim 3D yang dapat dimainkan di platform Itch.io, menghadirkan pengalaman bermain low-poly yang seru dengan sentuhan humor lokal yang khas serta desain visual yang kohesif.",
     },
     features: ["3D Low-poly assets", "Custom HUD", "Arcade time management"],
     repo: "#",
-    demo: "#",
+    game: "https://vianz-project.itch.io/kuli-madness",
+    demo: "https://www.figma.com/proto/pCMADLxSC0uPxHZerMF8Cw/UI-Game-Kuli-Madness?node-id=2014-114&viewport=756%2C481%2C0.13&t=uW0Iw5R3Mo6dOduz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2014%3A114&page-id=180%3A74",
     tags: ["Blender", "Figma", "Notion", "3D Modeling"],
     stack: ["Blender", "Figma", "Notion"],
     keywords: ["game", "UI/UX"],
@@ -99,13 +108,18 @@ export const gameProjectRecords = {
       "/images/projects/kulimadness/kulimadness1.webp",
       "/images/projects/kulimadness/kulimadness2.webp",
       "/images/projects/kulimadness/kulimadness3.webp",
-      "/images/projects/kulimadness/kulimadness4.webp",
+      "/images/projects/kulimadness/kulimadness4.webp", 
       "/images/projects/kulimadness/kulimadness5.webp",
       "/images/projects/kulimadness/kulimadness6.webp",
     ],
   },
 
-  malamkelam: {
+
+
+
+
+
+malamkelam: {
     slug: "malamkelam",
     title: "Malam Kelam",
     subtitle: "3D Survival Horror Game",
@@ -115,35 +129,36 @@ export const gameProjectRecords = {
     status: "Completed",
     image: "/images/projects/malamkelam/malamkelam.webp",
     midImage: "/images/projects/malamkelam/malamkelam.webp",
-    desc: {
-      en: "An immersive 3D survival horror game set in a haunted Indonesian environment built in Unity.",
-      id: "Gim survival horror 3D berkesan imersif berlatar lingkungan mistis Indonesia yang dibangun di Unity.",
+ desc: {
+      en: "Malam Kelam is a 3D survival horror game following Alya, a young woman who was mysteriously kidnapped on her way home and lost consciousness. Awakening in a dilapidated, multi-story traditional house with dim lighting and a chilling atmosphere, Alya is gripped with terror upon hearing a faint conversation from upstairs that she is to be sacrificed in a mystical ritual.",
+      id: "Malam Kelam adalah gim survival horror 3D yang mengikuti kisah Alya, seorang wanita muda yang diculik secara misterius saat sedang dalam perjalanan pulang dan kehilangan kesadaran. Saat terbangun, ia mendapati dirinya berada di sebuah rumah tua yang lusuh dan bertingkat, dengan pencahayaan minim dan suasana yang mencekam. Ketakutan mulai menghantui Alya saat ia mendengar percakapan samar dari lantai atas bahwa ia akan dijadikan tumbal dalam sebuah ritual mistis.",
     },
+
     overview: {
-      en: "Malam Kelam is a flagship final diploma project featuring Behavior Tree NPC enemy AI, atmospheric 3D environment design, and psychological horror narrative storytelling.",
-      id: "Malam Kelam merupakan proyek akhir tugas akhir unggulan yang menampilkan AI musuh NPC berbasis Behavior Tree, desain lingkungan 3D atmosferik, serta narasi horor psikologis.",
+      en: "Malam Kelam is a 3D survival horror game following Alya, a young woman who was mysteriously kidnapped on her way home and lost consciousness. Awakening in a dilapidated, multi-story traditional house with dim lighting and a chilling atmosphere, Alya is gripped with terror upon hearing a faint conversation from upstairs that she is to be sacrificed in a mystical ritual.",
+      id: "Malam Kelam adalah gim survival horror 3D yang mengikuti kisah Alya, seorang wanita muda yang diculik secara misterius saat sedang dalam perjalanan pulang dan kehilangan kesadaran. Saat terbangun, ia mendapati dirinya berada di sebuah rumah tua yang lusuh dan bertingkat, dengan pencahayaan minim dan suasana yang mencekam. Ketakutan mulai menghantui Alya saat ia mendengar percakapan samar dari lantai atas bahwa ia akan dijadikan tumbal dalam sebuah ritual mistis.",
     },
     overviewDetail: {
-      en: "Constructed custom C# Behavior Trees in Unity (Selector/Sequence nodes & FOV sensors), modeled 3D assets in Blender, rigged animations in Mixamo, and conducted quantitative Black-Box & UAT testing with 41 respondents.",
-      id: "Membangun Behavior Tree C# kustom di Unity (node Selector/Sequence & sensor FOV), memodelkan aset 3D di Blender, merigging animasi di Mixamo, serta melakukan pengujian Black-Box & UAT kuantitatif terhadap 41 responden.",
+      en: "Constructed custom C# Behavior Trees in Unity (Selector/Sequence nodes & FOV sensors), modeled 3D assets in Blender, rigged animations in Mixamo, and conducted quantitative Black-Box testing with 41 respondents.",
+      id: "Membangun Behavior Tree C# kustom di Unity (node Selector/Sequence & sensor FOV), memodelkan aset 3D di Blender, merigging animasi di Mixamo, melakukan pengujian Black-Box secara kuantitatif terhadap 41 responden.",
     },
     scopeOfWork: {
       en: [
         "Behavior Tree AI Architecture",
         "3D Environment & Rigging",
         "C# Gameplay Programming",
-        "Black-Box & UAT Testing",
+        "Black-Box Testing",
       ],
       id: [
         "Arsitektur AI Behavior Tree",
         "Lingkungan 3D & Rigging",
         "Pemrograman Gameplay C#",
-        "Pengujian Black-Box & UAT",
+        "Pengujian Black-Box",
       ],
     },
     outcome: {
-      en: "Successfully completed and evaluated through rigorous testing, demonstrating high engagement and functional stability.",
-      id: "Berhasil diselesaikan dan dievaluasi melalui pengujian ketat, membuktikan tingkat keterlibatan dan stabilitas fungsional yang tinggi.",
+      en: "Successfully completed and evaluated through testing, with the game now available for download on Itch.io.",
+      id: "Berhasil diselesaikan dan dievaluasi melalui pengujian, gim sudah dapat diunduh melalui Itch.io.",
     },
     features: [
       "Behavior Tree enemy AI",
@@ -151,6 +166,7 @@ export const gameProjectRecords = {
       "Interactive puzzle mechanics",
     ],
     repo: "#",
+    game: "https://vianz-project.itch.io/malam-kelam",
     demo: "#",
     tags: ["Unity", "C#", "Blender", "Mixamo", "Behavior Tree"],
     stack: ["Unity Engine", "C#", "Blender", "Mixamo", "Figma"],
@@ -167,6 +183,7 @@ export const gameProjectRecords = {
     ],
   },
 
+
   virusevade: {
     slug: "virusevade",
     title: "Virus Evade",
@@ -179,28 +196,28 @@ export const gameProjectRecords = {
     midImage: "/images/projects/virusevade/virusevade.webp",
     desc: {
       en: "A fast-paced 2D arcade game where players dodge viral obstacles and collect immune boosts.",
-      id: "Gim arkade 2D bertempo cepat di mana pemain harus menghindari rintangan virus dan mengumpulkan peningkat sistem imun.",
+      id: "Gim arkade 2D bertempo cepat pemain harus menghindari rintangan virus dan mengumpulkan peningkat sistem imun.",
     },
     overview: {
-      en: "Virus Evade is a 2D side-scrolling arcade game developed using Unity Engine and C#. Designed for both PC and mobile platforms, it challenges player reaction speeds through procedural obstacle spawning.",
-      id: "Virus Evade adalah gim arkade side-scrolling 2D yang dikembangkan menggunakan Unity Engine dan C#. Dirancang untuk PC dan mobile, gim ini menguji kecepatan reaksi pemain melalui pembentukan rintangan prosedural.",
+      en: "Virus Evade is a 2D side-scrolling arcade game developed using Unity Engine and C#. Designed for PC , it challenges player reaction speeds through procedural obstacle spawning.",
+      id: "Virus Evade adalah gim arkade side-scrolling 2D yang dikembangkan menggunakan Unity Engine dan C#. Dirancang untuk PC, gim ini menguji kecepatan reaksi pemain melalui pembentukan rintangan prosedural.",
     },
     overviewDetail: {
       en: "Responsible for end-to-end development including game mechanics design, player movement physics, collision handling, UI/UX asset creation in Figma, and sound effects integration.",
-      id: "Bertanggung jawab atas pengembangan dari awal hingga akhir, mencakup desain mekanik gim, fisika pergerakan pemain, deteksi tabrakan, pembuatan aset UI/UX di Figma, serta integrasi efek suara.",
+      id: "Bertanggung jawab atas pengembangan dari awal hingga akhir, mencakup desain mekanik gim, fisika pergerakan pemain, deteksi tabrakan, pembuatan aset UI/UX di Figma, integrasi efek suara.",
     },
     scopeOfWork: {
       en: [
         "Game Mechanics & Gameplay Loop",
         "C# Scripting in Unity",
         "UI/UX Asset Creation",
-        "Mobile & PC Porting",
+  
       ],
       id: [
         "Mekanik Gim & Gameplay Loop",
         "Pemrograman C# di Unity",
         "Pembuatan Aset UI/UX",
-        "Porting Mobile & PC",
+       
       ],
     },
     outcome: {
@@ -213,7 +230,8 @@ export const gameProjectRecords = {
       "Cross-platform controls",
     ],
     repo: "#",
-    demo: "https://vianz-project.itch.io/virusevade",
+    game: "https://vianz-project.itch.io/virusevade",
+    demo: "#",
     tags: ["Unity", "C#", "Figma", "Game Dev"],
     stack: ["Unity Engine", "C#", "Figma"],
     keywords: ["game", "UI/UX"],

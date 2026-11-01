@@ -41,12 +41,12 @@ export const uiUxProjectsData = {
       en: [
         "Gamification Strategy (FigJam)",
         "Child-Friendly UI Design",
-        "Interactive Audio/Visual Prototyping",
+        "Interactive Visual Prototyping",
       ],
       id: [
         "Strategi Gamifikasi (FigJam)",
         "Desain UI Ramah Anak",
-        "Prototipe Audio/Visual Interaktif",
+        "Prototipe Visual Interaktif",
       ],
     },
     outcome: {
@@ -59,7 +59,7 @@ export const uiUxProjectsData = {
       "Gamified quiz loops",
     ],
     repo: "#",
-    demo: "#",
+    demo: "https://www.figma.com/proto/ZuDBjMecXDDhlUxPqvaFWt/UI-Mobile-Game-Belajar-Mengaji?node-id=2019-13144&viewport=124%2C155%2C0.11&t=Lpknd51sHpMrByl0-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2019%3A13144&page-id=399%3A2184",
     tags: ["Figma", "FigJam", "Edutainment", "Mobile UI"],
     stack: ["Figma", "FigJam"],
     keywords: ["app", "game", "UI/UX"],
@@ -71,69 +71,75 @@ export const uiUxProjectsData = {
       "/images/projects/mengajiiqro/mengajiiqro5.webp",
       "/images/projects/mengajiiqro/mengajiiqro6.webp",
     ],
-    uxCaseStudy: {
-      sections: [
-        {
-          heading: { id: "Tentang Proyek", en: "About the Project" },
-          body: {
-            id: "Belajar Mengaji (Iqro) adalah konsep aplikasi edutainment mobile yang membantu anak-anak belajar huruf Hijaiyah melalui aktivitas interaktif dan permainan.",
-            en: "Belajar Mengaji (Iqro) is a mobile edutainment app concept that helps children learn Hijaiyah letters through interactive activities and games.",
-          },
+   uxCaseStudy: {
+    sections: [
+      {
+        heading: { id: "Tentang Proyek", en: "About the Project" },
+        body: {
+          id: "Belajar Mengaji (Iqro) adalah konsep aplikasi edutainment mobile yang membantu anak-anak belajar huruf Hijaiyah melalui aktivitas interaktif dan permainan.",
+          en: "Belajar Mengaji (Iqro) is a mobile edutainment app concept that helps children learn Hijaiyah letters through interactive activities and games.",
         },
-        {
-          heading: { id: "Fokus Desain", en: "Design Focus" },
-          body: {
-            id: "Antarmuka dirancang agar mudah dipahami anak, dengan visual ceria, target sentuh yang besar, dan umpan balik audio-visual untuk mendukung pengalaman belajar.",
-            en: "The interface is designed to be easy for children to understand, using cheerful visuals, large touch targets, and audio-visual feedback to support learning.",
-          },
-          items: [
-            {
-              id: "Strategi gamifikasi dan alur belajar.",
-              en: "Gamification strategy and learning loops.",
-            },
-            { id: "Desain UI ramah anak.", en: "Child-friendly UI design." },
-            {
-              id: "Prototipe interaksi audio-visual.",
-              en: "Audio-visual interaction prototyping.",
-            },
-          ],
-        },
-      ],
-      process: [
-        {
-          heading: { id: "Strategi Gamifikasi", en: "Gamification Strategy" },
-          body: {
-            id: "Memetakan alur belajar dan elemen permainan untuk menjaga keterlibatan anak.",
-            en: "Mapped learning loops and game elements to keep children engaged.",
-          },
-        },
-        {
-          heading: { id: "UI Ramah Anak", en: "Child-Friendly UI" },
-          body: {
-            id: "Merancang tombol berukuran besar, visual berwarna, dan struktur layar yang sederhana.",
-            en: "Designed large buttons, colorful visuals, and a simple screen structure.",
-          },
-        },
-        {
-          heading: {
-            id: "Prototipe Audio-Visual",
-            en: "Audio-Visual Prototype",
-          },
-          body: {
-            id: "Menyusun interaksi pelafalan dan umpan balik visual, termasuk lencana untuk menandai progres belajar.",
-            en: "Prototyped pronunciation interactions and visual feedback, including badges to indicate learning progress.",
-          },
-        },
-      ],
-      conclusion: {
-        id: "Menghasilkan prototipe aplikasi edukasi mobile yang intuitif dan membuat proses belajar Hijaiyah terasa lebih menyenangkan bagi anak.",
-        en: "Produced an intuitive mobile education prototype that makes learning Hijaiyah more enjoyable for children.",
       },
-      lessonLearned: {
-        id: "Desain untuk anak perlu memprioritaskan kejelasan, target sentuh yang sesuai, serta umpan balik langsung agar setiap interaksi mudah dipahami.",
-        en: "Designing for children requires clear interfaces, appropriately sized touch targets, and immediate feedback so each interaction is easy to understand.",
+      {
+        heading: { id: "Fokus Desain", en: "Design Focus" },
+        body: {
+          id: "Antarmuka dirancang agar mudah dipahami anak, dengan visual ceria, target sentuh yang besar, dan umpan balik visual untuk mendukung pengalaman belajar.",
+          en: "The interface is designed to be easy for children to understand, using cheerful visuals, large touch targets, and visual feedback to support learning.",
+        },
+        items: [
+          {
+            id: "Strategi gamifikasi dan alur belajar.",
+            en: "Gamification strategy and learning loops.",
+          },
+          { id: "Desain UI ramah anak.", en: "Child-friendly UI design." },
+          {
+            id: "Prototipe interaksi visual.",
+            en: "Visual interaction prototyping.",
+          },
+        ],
       },
+    ],
+    process: [
+      {
+        heading: {
+          id: "Wireframe",
+          en: "Wireframes",
+        },
+        body: {
+          id: "Merancang kerangka dasar struktur halaman dan alur navigasi aplikasi edukasi yang ramah anak.",
+          en: "Designed basic page structure frameworks and navigation flows for a child-friendly educational app.",
+        },
+      },
+      {
+        heading: {
+          id: "High-Fidelity",
+          en: "High-Fidelity",
+        },
+        body: {
+          id: "Mengembangkan desain visual ceria dengan penerapan elemen gamifikasi, tipografi yang jelas, dan komponen antarmuka ramah anak.",
+          en: "Developed cheerful visual designs incorporating gamification elements, clear typography, and child-friendly interface components.",
+        },
+      },
+      {
+        heading: {
+          id: "Prototipe",
+          en: "Prototype",
+        },
+        body: {
+          id: "Menghubungkan seluruh layar high-fidelity menjadi prototipe interaktif guna mensimulasikan alur pelafalan, umpan balik visual, dan sistem lencana progres belajar.",
+          en: "Connected all high-fidelity screens into an interactive prototype to simulate pronunciation flows, visual feedback, and learning progress badge systems.",
+        },
+      },
+    ],
+    conclusion: {
+      id: "Belajar Mengaji (Iqro) berhasil diwujudkan sebagai prototipe aplikasi edutainment mobile yang intuitif, interaktif, dan membuat proses belajar huruf Hijaiyah terasa lebih menyenangkan bagi anak.",
+      en: "Belajar Mengaji (Iqro) was successfully realized as an intuitive, interactive mobile edutainment app prototype that makes learning Hijaiyah letters much more enjoyable for children.",
     },
+    lessonLearned: {
+      id: "Pengembangan ini menegaskan bahwa perancangan produk untuk anak-anak sangat memerlukan kejelasan visual, target sentuh yang sesuai, serta umpan balik instan agar setiap interaksi terasa mudah dipahami dan memotivasi.",
+      en: "This development emphasizes that designing products for children requires visual clarity, appropriately sized touch targets, and instant feedback to ensure every interaction is intuitive and motivating.",
+    },
+  },
   },
 
   elevatedsoles: {
@@ -218,39 +224,42 @@ export const uiUxProjectsData = {
       process: [
         {
           heading: {
-            id: "Wireframe & Desain Visual",
-            en: "Wireframes & Visual Design",
+            id: "Wireframe",
+            en: "Wireframes",
           },
           body: {
-            id: "Merancang struktur halaman dan antarmuka high-fidelity untuk pengalaman belanja sepatu premium.",
-            en: "Designed page structures and high-fidelity interfaces for a premium footwear shopping experience.",
-          },
-        },
-        {
-          heading: { id: "Optimasi Checkout", en: "Checkout Optimization" },
-          body: {
-            id: "Menyusun alur checkout yang jelas untuk membantu pengguna menyelesaikan pembelian.",
-            en: "Designed a clear checkout flow to help users complete their purchase.",
+            id: "Merancang kerangka dasar struktur halaman dan alur navigasi untuk pengalaman belanja sepatu premium.",
+            en: "Designed basic page structure frameworks and navigation flows for a premium footwear shopping experience.",
           },
         },
         {
           heading: {
-            id: "Design System & Prototipe",
-            en: "Design System & Prototype",
+            id: "High-Fidelity",
+            en: "High-Fidelity",
           },
           body: {
-            id: "Mendefinisikan token warna, tipografi, variasi komponen, dan status tombol, lalu merangkainya dalam prototipe interaktif.",
-            en: "Defined color tokens, typography, component variants, and button states, then connected them in an interactive prototype.",
+            id: "Mengembangkan desain visual tingkat lanjut dengan penerapan token warna, tipografi, dan komponen antarmuka yang konsisten.",
+            en: "Developed advanced visual designs by applying consistent color tokens, typography, and interface components.",
+          },
+        },
+        {
+          heading: {
+            id: "Prototipe",
+            en: "Prototype",
+          },
+          body: {
+            id: "Menghubungkan seluruh layar high-fidelity menjadi prototipe interaktif guna mensimulasikan alur belanja dan checkout yang mulus.",
+            en: "Connected all high-fidelity screens into an interactive prototype to simulate a smooth shopping and checkout flow.",
           },
         },
       ],
       conclusion: {
-        id: "Menghasilkan showcase desain e-commerce yang elegan dengan lebih dari 20 tata letak layar responsif.",
-        en: "Created an elegant e-commerce design showcase featuring more than 20 responsive screen layouts.",
+        id: "Elevated Soles berhasil diwujudkan sebagai showcase e-commerce sepatu premium yang elegan, lengkap dengan sistem desain yang terstruktur dan alur belanja yang intuitif.",
+        en: "Elevated Soles was successfully realized as an elegant premium footwear e-commerce showcase, complete with a structured design system and intuitive shopping flows.",
       },
       lessonLearned: {
-        id: "Sistem desain dan status komponen yang konsisten membantu menyatukan pengalaman pengguna di seluruh alur belanja dan checkout.",
-        en: "A consistent design system and component states help unify the experience across the shopping and checkout journey.",
+        id: "Pengembangan ini menegaskan bahwa penggunaan sistem desain yang konsisten serta alur checkout yang dioptimalkan dalam membangun kepercayaan pengguna pada platform e-commerce produk mewah.",
+        en: "This development emphasizes that utilizing a consistent design system and optimized checkout flows in building user trust on luxury e-commerce platforms.",
       },
     },
   },
@@ -331,18 +340,8 @@ export const uiUxProjectsData = {
         {
           heading: { id: "Tentang Lokaway", en: "About Lokaway" },
           body: {
-            id: "Lokaway adalah aplikasi perjalanan digital all-inclusive untuk merencanakan dan memesan liburan tanpa stres akibat biaya tersembunyi dan jadwal yang terpecah. Platform ini mengintegrasikan tiket pesawat, akomodasi hotel, dan transportasi lokal ke dalam satu ekosistem yang tersinkronisasi.",
-            en: "Lokaway is an all-inclusive digital travel app concept for planning and booking vacations without the stress of hidden fees and fragmented schedules. It integrates flights, hotel accommodation, and local transportation into one synchronized ecosystem.",
-          },
-          paragraphs: {
-            id: [
-              "Target pengguna utamanya adalah wisatawan individu, pasangan, maupun keluarga.",
-              "Lokaway dirancang untuk pengguna yang menginginkan kepastian jadwal, transparansi harga, dan layanan perjalanan yang aman serta tepercaya.",
-            ],
-            en: [
-              "The primary audience includes solo travelers, couples, and families.",
-              "Lokaway is designed for people seeking dependable schedules, transparent pricing, and safe, trusted travel services.",
-            ],
+            id: "Lokaway aplikasi perjalanan digital all-inclusive yang dirancang untuk merencanakan dan memesan liburan tanpa stres akibat biaya tersembunyi dan jadwal yang terpecah. Platform ini mengintegrasikan tiket pesawat, akomodasi hotel, dan transportasi lokal ke dalam satu ekosistem yang tersinkronisasi. Target pengguna utama Lokaway wisatawan individu, pasangan, maupun keluarga yang menginginkan kepastian jadwal, transparansi harga, dan keamanan layanan tanpa hambatan selama perjalanan.",
+            en: "Lokaway is an all-inclusive digital travel app designed to plan and book vacations without the stress of hidden costs and fragmented schedules. The platform integrates flight tickets, hotel accommodations, and local transportation into a single synchronized ecosystem. The primary target users of Lokaway are individual travelers, couples, and families who desire schedule certainty, price transparency, and seamless service security throughout their trip.",
           },
         },
         {
@@ -353,12 +352,10 @@ export const uiUxProjectsData = {
           },
           paragraphs: {
             id: [
-              "Transparansi harga juga menjadi masalah pada layanan Online Travel Agent. Harga awal dapat terlihat murah, tetapi bertambah di halaman checkout karena biaya layanan, pajak, atau administrasi.",
-              "Perubahan harga pada tahap akhir membuat pengguna cemas dan dapat meningkatkan pembatalan transaksi.",
+              "Transparansi harga juga menjadi masalah pada layanan Online Travel Agent. Harga awal dapat terlihat murah, tetapi bertambah di halaman checkout karena biaya layanan, pajak, atau administrasi. Perubahan harga pada tahap akhir membuat pengguna cemas dan dapat meningkatkan pembatalan transaksi.",
             ],
             en: [
-              "Price transparency is another challenge with online travel agencies. An initial price may look low, then increase at checkout due to service fees, taxes, or administrative charges.",
-              "Unexpected costs at the final step create anxiety and can increase booking abandonment.",
+              "Price transparency is another challenge with online travel agencies. An initial price may look low, then increase at checkout due to service fees, taxes, or administrative charges. Unexpected costs at the final step create anxiety and can increase booking abandonment.",
             ],
           },
         },
@@ -476,8 +473,8 @@ export const uiUxProjectsData = {
         {
           heading: { id: "User Persona", en: "User Persona" },
           body: {
-            id: "Persona utama adalah Dimas Prasetyo, pria berusia 34 tahun yang tinggal di Jakarta. Ia seorang manajer proyek, kepala keluarga dengan dua anak, memiliki kesibukan profesional tinggi, berpikir logis, menghargai waktu, dan mengutamakan kenyamanan serta keamanan liburan keluarga.",
-            en: "The primary persona is Dimas Prasetyo, a 34-year-old man living in Jakarta. He is a project manager and father of two with a demanding work life. He is logical, values his time, and prioritizes comfort and safety for his family's vacation.",
+            id: "Melalui fase riset, persona pengguna dikembangkan untuk mewakili target audiens utama Lokaway, yang mencerminkan karakteristik, tujuan utama, dan rasa frustrasi saat merencanakan perjalanan. Persona utama adalah Dimas Prasetyo, pria berusia 34 tahun yang tinggal di Jakarta. Ia seorang manajer proyek, kepala keluarga dengan dua anak, memiliki kesibukan profesional tinggi, berpikir logis, menghargai waktu, dan mengutamakan kenyamanan serta keamanan liburan keluarga.",
+            en: "Through the research phase, user personas are developed to represent Lokaway's main target audience, reflecting characteristics, primary goals, and frustrations when planning a trip. The primary persona is Dimas Prasetyo, a 34-year-old man living in Jakarta. He is a project manager and father of two with a demanding work life. He is logical, values his time, and prioritizes comfort and safety for his family's vacation.",
           },
         },
         {
@@ -504,10 +501,6 @@ export const uiUxProjectsData = {
             {
               id: "Critical: Single-Checkout, Instant Ticketing, dan Verified Partner Badge.",
               en: "Critical: Single Checkout, Instant Ticketing, and Verified Partner Badge.",
-            },
-            {
-              id: "High Value: sinkronisasi jadwal terpadu dan Live Support 24/7.",
-              en: "High Value: synchronized schedules and 24/7 Live Support.",
             },
           ],
         },
@@ -588,8 +581,8 @@ export const uiUxProjectsData = {
         {
           heading: { id: "Prototyping", en: "Prototyping" },
           body: {
-            id: "Prototipe interaktif digunakan untuk menyimulasikan alur pencarian paket all-inclusive, meninjau itinerary terpadu, melakukan single-checkout dengan rincian harga transparan, hingga menerima tiket elektronik setelah pembayaran.",
-            en: "The interactive prototype simulates searching all-inclusive packages, reviewing a unified itinerary, completing a single checkout with transparent pricing, and receiving e-tickets after payment.",
+            id: "Prototipe interaktif ini digunakan untuk mensimulasikan alur pencarian paket all-inclusive, proses single-checkout dengan rincian harga yang transparan, hingga penerimaan tiket elektronik setelah pembayaran berhasil.",
+            en: "The interactive prototype is used to simulate the all-inclusive package search flow, the single-checkout process with transparent price details, and the issuance of e-tickets following successful payment.",
           },
           resource: {
             label: {
@@ -601,12 +594,12 @@ export const uiUxProjectsData = {
         },
       ],
       conclusion: {
-        id: "Melalui pendekatan Design Thinking, masalah jadwal operasional yang terfragmentasi, biaya tersembunyi, dan ketidakpastian mitra diterjemahkan menjadi pemesanan all-inclusive, single-checkout dengan transparansi harga, serta instant ticketing. Hasil akhirnya adalah prototipe high-fidelity interaktif untuk memvalidasi konsep MVP.",
+        id: "Melalui pendekatan Design Thinking, masalah jadwal operasional yang terfragmentasi, biaya tersembunyi, dan ketidakpastian mitra diterjemahkan menjadi solusi berupa pemesanan all-inclusive, single-checkout dengan transparansi harga, serta instant ticketing. Hasil akhirnya adalah prototipe high-fidelity interaktif yang dirancang untuk memvalidasi konsep MVP.",
         en: "Using a Design Thinking approach, fragmented schedules, hidden fees, and uncertainty about travel partners were translated into all-inclusive booking, transparent single checkout, and instant ticketing. The result is an interactive high-fidelity prototype for validating the MVP concept.",
       },
       lessonLearned: {
-        id: "Proyek ini memperkuat pemahaman proses desain produk end-to-end: riset berbasis data membantu menemukan pain point yang nyata, sedangkan persona, journey map, How Might We, dan Priority Matrix mengubah wawasan tersebut menjadi fokus MVP yang terarah. Design system juga terbukti penting untuk menjaga konsistensi sekaligus mengomunikasikan rasa aman dan profesionalisme. Pengembangan selanjutnya dapat mengeksplorasi auto-rescheduling, live support 24/7, serta usability testing dengan target pengguna.",
-        en: "This project strengthened an end-to-end product-design approach: data-informed research uncovers real pain points, while personas, journey maps, How Might We, and a Priority Matrix turn insights into a focused MVP. A design system also proved essential for consistency and communicating trust. Future exploration could include auto-rescheduling, 24/7 live support, and usability testing with target users.",
+        id: "Pengembangan Lokaway memberikan pengalaman perancangan produk digital end-to-end mulai dari riset berbasis data, perumusan peluang desain, hingga pembuatan prototipe interaktif. Berdasarkan riset kompetitor dan keluhan pengguna, ditemukan bahwa wisatawan sangat membutuhkan transparansi biaya, jaminan keamanan, dan sinkronisasi jadwal. Tahapan Design Thinking seperti User Persona, User Journey Map, HMW, dan Priority Matrix membantu menyaring fitur utama menjadi MVP yang terarah, seperti Single-Checkout, Instant Ticketing, dan Verified Partner. Selain itu, penerapan Design System terbukti penting untuk menjaga konsistensi visual serta membangun kepercayaan pengguna saat bertransaksi. Secara keseluruhan, proyek ini mematangkan pemahaman User-Centered Design serta memperkuat kompetensi UX Research, UI Design, dan problem-solving berbasis data empiris.",
+        en: "The development of Lokaway provided end-to-end digital product design experience—ranging from data-driven research and design opportunity formulation to interactive prototyping. Competitor research and user feedback revealed that travelers heavily require cost transparency, security guarantees, and schedule synchronization. Frameworks like User Personas, User Journey Maps, HMWs, and Priority Matrices successfully streamlined feature ideation into a focused MVP featuring Single-Checkout, Instant Ticketing, and Verified Partners. Furthermore, implementing a Design System proved crucial for maintaining visual consistency and building trust during high-value transactions. Overall, the Lokaway project refined User-Centered Design thinking and strengthened technical-strategic competencies in UX Research, UI Design, and empirical problem-solving.",
       },
     },
   },
@@ -689,7 +682,7 @@ export const uiUxProjectsData = {
         {
           heading: { id: "Tentang Proyek", en: "About the Project" },
           body: {
-            id: "Noizu Music adalah aplikasi streaming musik untuk penggemar budaya pop Jepang dan anime. Pengguna dapat menemukan OST anime resmi, membuat playlist kustom, dan mengelola lagu favorit dalam satu library yang terorganisasi.",
+            id: "Noizu Music aplikasi streaming musik untuk penggemar budaya pop Jepang dan anime. Pengguna dapat menemukan OST anime resmi, membuat playlist kustom, dan mengelola lagu favorit dalam satu library yang terorganisasi.",
             en: "Noizu Music is a music-streaming app for fans of Japanese pop culture and anime. Users can discover official anime OSTs, create custom playlists, and organize favorite tracks in one library.",
           },
         },
@@ -770,20 +763,6 @@ export const uiUxProjectsData = {
             id: "Aditya Pratama, 21 tahun, adalah mahasiswa sekaligus freelance desainer grafis yang tinggal di Surabaya. Ia penggemar berat anime dan J-Pop, serta mendengarkan musik selama berjam-jam untuk membantu fokus saat bekerja atau belajar.",
             en: "Aditya Pratama, 21, is a university student and freelance graphic designer living in Surabaya. A devoted anime and J-Pop fan, he listens to music for hours to stay focused while working or studying.",
           },
-          items: [
-            {
-              id: "Tujuan: menemukan OST anime orisinal dengan cepat dan akurat.",
-              en: "Goal: find original anime OSTs quickly and accurately.",
-            },
-            {
-              id: "Tujuan: membaca transliterasi Romaji agar dapat memahami dan ikut bernyanyi.",
-              en: "Goal: read Romaji transliteration to understand and sing along.",
-            },
-            {
-              id: "Frustrasi: forced shuffle, pencarian lagu Jepang yang tidak akurat, paywall, serta lagu cover yang disangka OST orisinal.",
-              en: "Frustrations: forced shuffle, inaccurate Japanese-song search, paywalls, and cover songs mistaken for original OSTs.",
-            },
-          ],
         },
         {
           heading: { id: "User Journey Map", en: "User Journey Map" },
@@ -932,12 +911,12 @@ export const uiUxProjectsData = {
         },
       ],
       conclusion: {
-        id: "Noizu Music mengatasi autentikasi yang rumit, lirik yang hilang, dan forced shuffle melalui Google SSO, toggle bahasa lirik, Official Badge untuk lagu orisinal, serta kontrol on-demand playback. Usability testing belum dilakukan karena keterbatasan waktu; konsep dikembangkan berdasarkan riset sekunder, persona, dan journey map. Pengembangan berikutnya dapat mencakup usability testing dan lirik tersinkronisasi.",
-        en: "Noizu Music addresses login friction, missing lyrics, and forced shuffle through Google SSO, a lyrics-language toggle, Official Badges for original tracks, and on-demand playback control. Usability testing was not conducted due to time constraints; the concept is based on secondary research, a persona, and a journey map. Further work could include usability testing and synchronized lyrics.",
+        id: "Noizu Music dirancang untuk mengatasi permasalahan utama penikmat musik anime dan J-Pop melalui integrasi Google SSO, toggle language lirik, official badge, dan kontrol on-demand playback. Meskipun belum melalui usability testing karena keterbatasan waktu, proyek ini dibangun berdasarkan riset, persona, dan journey map yang solid untuk menghasilkan solusi MVP yang solutif.",
+        en: "Noizu Music was designed to solve the primary challenges faced by anime and J-Pop music enthusiasts through Google SSO integration, lyric language toggles, official badges, and full on-demand playback control. Although usability testing has not yet been conducted due to time constraints, the project was built upon a solid foundation of secondary research, personas, and journey maps to deliver a practical MVP solution.",
       },
       lessonLearned: {
-        id: "Ulasan organik kompetitor membantu menangkap frustrasi nyata; kebutuhan audiens niche perlu dipahami secara spesifik; HMW mengubah masalah menjadi peluang; pengalaman streaming perlu mengembalikan kontrol pengguna; dan design system serta iterasi menjaga konsistensi.",
-        en: "Organic competitor reviews reveal real user frustrations; niche audiences need to be understood specifically; How Might We turns problems into opportunities; streaming should restore user control; and a design system with iteration maintains consistency.",
+        id: "Proyek ini memberikan sejumlah pembelajaran penting, mulai dari pemanfaatan ulasan organik kompetitor untuk menggali frustrasi pengguna secara autentik hingga pemenuhan kebutuhan spesifik audiens (niche) seperti pencarian Romaji dan lagu OST orisinal. Selain itu, perumusan masalah yang jelas melalui pendekatan How Might We (HMW) membantu memetakan MVP secara terfokus, sementara penerapan kontrol pengguna (user control & freedom) serta sistem desain yang kohesif terbukti esensial dalam menghadirkan pengalaman streaming yang memuaskan dan konsisten di setiap titik interaksi.",
+        en: "This project provided several key takeaways, ranging from utilizing organic competitor reviews to uncover authentic user frustrations, to catering to specific niche audience needs such as Romaji search and original OST differentiation. Furthermore, clear problem formulation through the How Might We (HMW) approach helped streamline focused MVP mapping, while prioritizing user control and a cohesive design system proved essential in delivering a satisfying and consistent streaming experience across every touchpoint.",
       },
     },
   },

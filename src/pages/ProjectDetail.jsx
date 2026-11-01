@@ -228,17 +228,6 @@ const ProjectDetail = () => {
                         ))}
                       </ul>
                       <div className="flex flex-wrap items-center gap-4 pt-2">
-                        {project.demo && project.demo !== "#" && (
-                          <a
-                            href={project.demo}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group inline-flex items-center gap-2 px-4 py-2.5 text-xs font-mono font-semibold uppercase tracking-wider text-white bg-[#ff4a22] hover:bg-[#e03d1a] rounded-full shadow-md shadow-[#ff4a22]/20 hover:shadow-lg hover:shadow-[#ff4a22]/35 transition-all duration-300 hover:-translate-y-0.5"
-                          >
-                            <span>{t("projectDetail", "liveDemo", lang) || "Live Demo"}</span>
-                            <ArrowUpRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                          </a>
-                        )}
                         {project.repo && project.repo !== "#" && (
                           <a
                             href={project.repo}
@@ -254,6 +243,42 @@ const ProjectDetail = () => {
                     </section>
                   </FadeIn>
                 )}
+
+                {(project.game && project.game !== "#") ||
+                (project.demo && project.demo !== "#") ? (
+                  <FadeIn>
+                    <div className="flex flex-wrap items-center gap-4">
+                      {project.game && project.game !== "#" && (
+                        <a
+                          href={project.game}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group inline-flex items-center gap-2 rounded-full bg-[#ff4a22] px-4 py-2.5 text-xs font-mono font-semibold uppercase tracking-wider text-white shadow-md shadow-[#ff4a22]/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#e03d1a] hover:shadow-lg hover:shadow-[#ff4a22]/35"
+                        >
+                          <span>Link Game</span>
+                          <ArrowUpRight
+                            size={14}
+                            className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                          />
+                        </a>
+                      )}
+                      {project.demo && project.demo !== "#" && (
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group inline-flex items-center gap-2 rounded-full border border-[#ff4a22] px-4 py-2.5 text-xs font-mono font-semibold uppercase tracking-wider text-[#ff4a22] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#ff4a22] hover:text-white"
+                        >
+                          <span>Link Demo</span>
+                          <ArrowUpRight
+                            size={14}
+                            className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                          />
+                        </a>
+                      )}
+                    </div>
+                  </FadeIn>
+                ) : null}
               </div>
             </div>
 

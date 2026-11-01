@@ -50,7 +50,10 @@ export const webProjectRecords = {
     ],
   },
 
-  levelup: {
+
+
+
+levelup: {
     slug: "levelup",
     title: "Level UP",
     subtitle: "Gaming Info & Review Portal",
@@ -62,33 +65,32 @@ export const webProjectRecords = {
     midImage: "/images/projects/levelup/levelup.webp",
     desc: {
       en: "A web-based portal providing gaming reviews, news, and release schedules for PC and console gamers.",
-      id: "Portal berbasis web yang menyajikan ulasan gim, berita, dan jadwal rilis untuk gamer PC maupun konsol.",
+      id: "Platform berbasis web yang menyajikan ulasan gim, berita terkini, dan jadwal rilis untuk para gamer PC maupun konsol.",
     },
     overview: {
       en: "Level UP is a desktop web platform designed for gaming enthusiasts to explore game reviews, trending news, and upcoming release dates. Built with clean HTML5, CSS3, and JavaScript after an extensive UI/UX design phase in Figma.",
-      id: "Level UP adalah platform web desktop yang dirancang bagi penggemar gim untuk mengeksplorasi ulasan gim, berita terkini, dan jadwal rilis mendatang. Dibangun dengan HTML5, CSS3, dan JavaScript setelah tahap desain UI/UX di Figma.",
+      id: "Level UP adalah platform web desktop yang dirancang bagi penggemar gim untuk mengeksplorasi ulasan gim, berita terkini, dan jadwal rilis mendatang. Dibangun menggunakan HTML5, CSS3, dan JavaScript setelah melalui tahap riset dan desain UI/UX yang mendalam di Figma.",
     },
     overviewDetail: {
       en: "The project focuses on visual hierarchy, dark mode aesthetic tailored for gamers, and fast performance. It features dynamic filtering for game genres and interactive review cards.",
-      id: "Proyek ini berfokus pada hierarki visual, estetika mode gelap khas dunia gim, serta performa cepat. Dilengkapi fitur filter dinamis untuk genre gim dan kartu ulasan interaktif.",
+      id: "Proyek ini berfokus pada hierarki visual, estetika mode gelap khas dunia gim, serta performa yang optimal. Dilengkapi dengan fitur filter dinamis berdasarkan genre gim dan kartu ulasan yang interaktif.",
     },
     scopeOfWork: {
       en: [
         "UI/UX Wireframing & Prototyping",
         "Front-End Development",
         "Responsive Layout",
-        "Interactive Component Design",
-      ],
+           ],
       id: [
-        "Wireframe & Prototipe UI/UX",
+        "Wireframing & Prototipe UI/UX",
         "Pengembangan Front-End",
         "Tata Letak Responsif",
-        "Desain Komponen Interaktif",
+
       ],
     },
     outcome: {
-      en: "Delivered an engaging desktop web portal prototype with smooth navigation and a distinct gaming aesthetic.",
-      id: "Menghasilkan prototipe web desktop yang menarik dengan navigasi mulus dan estetika dunia gim yang khas.",
+      en: "Successfully delivered an engaging and responsive gaming portal featuring smooth navigation, a distinct dark-mode gaming aesthetic, and robust interactive elements.",
+      id: "Berhasil merilis portal gim berbasis web yang menarik dan responsif, lengkap dengan navigasi yang mulus, estetika mode gelap khas gamer yang kuat, serta elemen interaktif yang optimal.",
     },
     features: ["Game review grid", "Genre filtering", "Interactive navigation"],
     repo: "#",
@@ -105,7 +107,8 @@ export const webProjectRecords = {
     ],
   },
 
-  questboard: {
+
+questboard: {
     slug: "questboard",
     title: "Game Dev Quest Board",
     subtitle: "Kanban Productivity Platform",
@@ -117,15 +120,15 @@ export const webProjectRecords = {
     midImage: "/images/projects/gamedevquestboard/gamedevquestboard0.webp",
     desc: {
       en: "A gamified Kanban project management web app tailored for game development pipelines.",
-      id: "Aplikasi web manajemen proyek Kanban yang digamifikasi khusus untuk alur kerja pengembangan gim.",
+      id: "Platform web manajemen proyek Kanban yang digamifikasi secara khusus untuk alur kerja pengembangan gim.",
     },
     overview: {
-      en: "Game Dev Quest Board turns task tracking into an RPG-style quest log. Built with native HTML5, CSS3, and Vanilla JavaScript with drag-and-drop mechanics and local storage persistence.",
-      id: "Game Dev Quest Board mengubah pelacakan tugas menjadi jurnal misi bergaya RPG. Dibangun dengan HTML5, CSS3, dan Vanilla JavaScript murni dilengkapi mekanik drag-and-drop serta penyimpanan local storage.",
+      en: "Game Dev Quest Board turns task tracking into an RPG-style quest log. Built with native HTML5, CSS3, and JavaScript with drag-and-drop mechanics and local storage persistence.",
+      id: "Game Dev Quest Board mengubah pelacakan tugas menjadi jurnal misi bergaya RPG. Dibangun dengan HTML5, CSS3, dan JavaScript murni, lengkap dengan mekanik drag-and-drop serta penyimpanan lokal (local storage).",
     },
     overviewDetail: {
       en: "Designed gamified progress badges, coded drag-and-drop task columns (To Do, In Progress, Done), and optimized lightweight DOM manipulation without external framework dependencies.",
-      id: "Merancang lencana progres bergaya gim, mengodekan kolom tugas drag-and-drop (To Do, In Progress, Done), serta mengoptimalkan manipulasi DOM yang ringan tanpa dependensi framework luar.",
+      id: "Merancang lencana progres bergaya gim, mengodekan kolom tugas drag-and-drop (To Do, In Progress, Done), mengoptimalkan manipulasi DOM yang ringan tanpa dependensi framework eksternal.",
     },
     scopeOfWork: {
       en: [
@@ -140,16 +143,16 @@ export const webProjectRecords = {
       ],
     },
     outcome: {
-      en: "Created a lightweight, zero-dependency web app that blends productivity with fun game developer branding.",
-      id: "Menciptakan aplikasi web ringan tanpa dependensi yang memadukan produktivitas dengan keunikan identitas pengembang gim.",
+      en: "Created a lightweight, zero-dependency web that seamlessly blends productivity with engaging game developer branding.",
+      id: "Berhasil menciptakan web yang ringan dan bebas dependensi,  mampu memadukan produktivitas kerja dengan identitas unik pengembang gim secara optimal.",
     },
     features: [
       "Drag and drop tasks",
       "LocalStorage persistence",
       "Gamified quest logs",
     ],
-    repo: "https://github.com",
-    demo: "#",
+    repo: "#",
+    demo: "https://game-dev-quest-board-todo-list-prog.vercel.app/",
     tags: ["HTML5", "CSS3", "JavaScript", "Kanban"],
     stack: ["HTML5", "CSS3", "Vanilla JavaScript"],
     keywords: ["Web"],
@@ -161,6 +164,9 @@ export const webProjectRecords = {
       "/images/projects/gamedevquestboard/gamedevquestboard5.webp",
     ],
   },
+
+
+
 
   vinzmovie: {
     slug: "vinzmovie",
@@ -200,15 +206,15 @@ export const webProjectRecords = {
     },
     outcome: {
       en: "Delivered a fast, fully responsive movie web application with seamless navigation and dynamic data fetching.",
-      id: "Menghasilkan aplikasi web film yang cepat, sepenuhnya responsif dengan navigasi mulus dan pengambil data dinamis.",
+      id: "Menghasilkan aplikasi web film, sepenuhnya responsif dengan navigasi mulus dan pengambil data dinamis.",
     },
     features: [
       "TMDB API integration",
       "Watchlist bookmarking",
       "Real-time search & filters",
     ],
-    repo: "https://github.com",
-    demo: "#",
+    repo: "",
+    demo: "https://vinz-movie-tmdb-api.vercel.app/",
     tags: ["React", "Vite", "Tailwind CSS", "TMDB API"],
     stack: [
       "React.js",
@@ -230,7 +236,11 @@ export const webProjectRecords = {
     ],
   },
 
-  viankasir: {
+
+
+
+
+viankasir: {
     slug: "viankasir",
     title: "Vian Kasir",
     subtitle: "Point of Sales & Dashboard System",
@@ -246,7 +256,7 @@ export const webProjectRecords = {
     },
     overview: {
       en: "Vian Kasir is a full-stack POS web platform engineered for real-time sales recording, inventory management, and revenue analytics. Built with Laravel backend, Filament PHP administrative panel, Tailwind CSS, and MySQL database.",
-      id: "Vian Kasir adalah platform web POS full-stack yang dirancang untuk pencatatan penjualan real-time, manajemen inventaris, dan analitik pendapatan. Dibangun dengan backend Laravel, panel administrasi Filament PHP, Tailwind CSS, dan database MySQL.",
+      id: "Vian Kasir adalah platform web POS full-stack yang dirancang untuk pencatatan penjualan secara real-time, manajemen inventaris, dan analitik pendapatan. Dibangun dengan backend Laravel, panel administrasi Filament PHP, Tailwind CSS, dan database MySQL.",
     },
     overviewDetail: {
       en: "Designed relational database schemas in MySQL, built custom Filament PHP resources/widgets for sales charts, implemented transaction receipt printing, and managed multi-role authentication (Cashier & Admin).",
@@ -254,21 +264,21 @@ export const webProjectRecords = {
     },
     scopeOfWork: {
       en: [
-        "Full-Stack Laravel Development",
+        "Laravel Development",
         "Filament PHP Admin Customization",
         "Relational Database Design (MySQL)",
         "Multi-Role Authentication & POS Logic",
       ],
       id: [
-        "Pengembangan Laravel Full-Stack",
+        "Pengembangan Laravel",
         "Kustomisasi Admin Filament PHP",
         "Desain Database Relasional (MySQL)",
         "Autentikasi Multi-Role & Logika POS",
       ],
     },
-    outcome: {
-      en: "Built an enterprise-ready cashier software solution offering fast transaction processing and clear financial reporting.",
-      id: "Membangun solusi perangkat lunak kasir siap pakai dengan pemrosesan transaksi cepat dan pelaporan keuangan yang jelas.",
+ outcome: {
+      en: "Successfully built a cashier software solution for processing transactions, inventory control, and financial reporting.",
+      id: "Berhasil membangun solusi perangkat lunak kasir dalam memproses transaksi, kontrol inventaris, pelaporan keuangan.",
     },
     features: [
       "Filament Admin Dashboard",
@@ -286,9 +296,13 @@ export const webProjectRecords = {
       "/images/projects/viankasir/viankasir3.webp",
       "/images/projects/viankasir/viankasir4.webp",
       "/images/projects/viankasir/viankasir5.webp",
-      "/images/projects/viankasir/viankasir6.webp",     
+      "/images/projects/viankasir/viankasir6.webp",
     ],
   },
+
+
+
+
 
   vinzcv: {
     slug: "vinzcv",
@@ -302,11 +316,11 @@ export const webProjectRecords = {
     midImage: "/images/projects/vinzcv/vinzcv.webp",
     desc: {
       en: "A web-based professional resume builder helping users create, edit, export, and share ATS-friendly resumes effortlessly.",
-      id: "Platform web pembuatan resume dan CV profesional yang membantu pengguna membuat, mengedit, mengekspor, serta membagikan resume ramah ATS secara praktis.",
+      id: "Platform web pembuatan resume dan CV profesional yang membantu pengguna membuat, mengedit, mengekspor, membagikan resume ramah ATS.",
     },
     overview: {
       en: "VinzCV is a web platform designed for job seekers, students, and professionals to craft structured, modern resumes without starting from scratch. Features include step-by-step form flows, template options, live previews, custom styling, background removal, and PDF exports.",
-      id: "VinzCV adalah platform web yang dirancang untuk pencari kerja, mahasiswa, dan profesional agar dapat membuat resume terstruktur dan modern tanpa mendesain dari awal. Dilengkapi alur pengisian bertahap, pilihan template, pratinjau langsung, kustomisasi tampilan, hapus background foto, serta ekspor PDF.",
+      id: "VinzCV platform web yang dirancang untuk pencari kerja, mahasiswa, dan profesional agar dapat membuat resume terstruktur dan modern tanpa mendesain dari awal. Dilengkapi alur pengisian bertahap, pilihan template, pratinjau langsung, kustomisasi tampilan, hapus background foto, serta ekspor PDF.",
     },
     overviewDetail: {
       en: "Engineered full-stack architecture using React, Vite, Tailwind CSS, Node.js, Express, and MongoDB. Implemented JWT authentication, multi-template rendering engines, client-side PDF export, profile picture background remover, and bilingual (ID/EN) localization.",
@@ -317,18 +331,18 @@ export const webProjectRecords = {
         "Full-Stack Web Architecture",
         "Interactive Resume Engine & PDF Export",
         "RESTful API & JWT Authentication",
-        "Responsive UI/UX & Bilingual Support",
+       
       ],
       id: [
         "Arsitektur Web Full-Stack",
         "Engine Resume Interaktif & Ekspor PDF",
         "RESTful API & Autentikasi JWT",
-        "UI/UX Responsif & Dukungan Dua Bahasa",
+        
       ],
     },
     outcome: {
-      en: "Successfully delivered a feature-complete, responsive resume builder platform with ATS-friendly output, public sharing capability, and seamless deployment on Vercel.",
-      id: "Berhasil membangun platform pembuatan resume yang responsif dan kaya fitur dengan output ramah ATS, fitur berbagi tautan publik, serta proses deployment yang optimal di Vercel.",
+      en: "Successfully delivered a feature-complete, responsive resume builder platform with ATS-friendly output, public sharing capability, and deployment on Vercel.",
+      id: "Berhasil membangun platform pembuatan resume yang responsif dan kaya fitur dengan output ramah ATS, fitur berbagi tautan publik, proses deployment di Vercel.",
     },
     features: [
       "User Registration & JWT Auth",

@@ -24,9 +24,13 @@ export const Navbar = () => {
         <div className="w-full px-6 md:px-12 lg:px-16 h-24 flex items-center justify-between">
           <Link
             to="/"
-            className="text-2xl md:text-3xl font-bold tracking-tight dark:text-white"
+            aria-label="Alfian Zainul Arif home"
+            className="inline-flex items-center gap-3 text-2xl font-bold tracking-tight md:text-3xl"
           >
-            Alfian.Z
+            <span className="font-black tracking-[-0.08em] text-[#ff4a22]">
+              AZ
+            </span>
+            <span className="text-zinc-950 dark:text-white">Alfian.Z</span>
           </Link>
 
           {/* Menu Navigasi Desktop */}

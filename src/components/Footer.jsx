@@ -2,9 +2,11 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import { siteData } from '../data/siteData';
 
 export const Footer = () => {
   const { lang } = useLanguage();
+  const footer = siteData.footer[lang];
   return (
     <footer id="contact" className="bg-[#ff4a22] text-white pt-24 pb-0 px-6 rounded-t-[3rem] md:rounded-t-[4rem] mt-12 border-t border-white/10 overflow-hidden">
       <div className="max-w-350 mx-auto">
@@ -38,10 +40,17 @@ export const Footer = () => {
               <div>
                 <h4 className="text-white/80 mb-6 font-medium">Connect</h4>
                 <div className="space-y-4 flex flex-col text-white/95 text-sm">
-                  <a href="https://www.linkedin.com/in/alfianzarif/" target="_blank" rel="noreferrer" className="hover:text-black transition-colors">LinkedIn</a>
-                  <a href="https://alfianwebporto.framer.website/" target="_blank" rel="noreferrer" className="hover:text-black transition-colors">Framer Portfolio</a>
-                  <a href="tel:089677618211" className="hover:text-black transition-colors">089677618211</a>
-                  <a href="mailto:alfianzarif311@gmail.com" className="hover:text-black transition-colors">alfianzarif311@gmail.com</a>
+                  {footer.connect.map((item) => (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      target={item.external ? '_blank' : undefined}
+                      rel={item.external ? 'noreferrer' : undefined}
+                      className="hover:text-black transition-colors"
+                    >
+                      {item.label}
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>

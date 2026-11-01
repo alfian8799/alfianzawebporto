@@ -219,7 +219,6 @@ export const siteData = {
       ],
       connect: [
         { label: 'LinkedIn', href: 'https://www.linkedin.com/in/alfianzarif/', external: true },
-        { label: 'Framer Portfolio', href: 'https://alfianwebporto.framer.website/', external: true },
         { label: '089677618211', href: 'tel:089677618211' },
         { label: 'alfianzarif311@gmail.com', href: 'mailto:alfianzarif311@gmail.com' },
       ],
@@ -235,7 +234,6 @@ export const siteData = {
       ],
       connect: [
         { label: 'LinkedIn', href: 'https://www.linkedin.com/in/alfianzarif/', external: true },
-        { label: 'Framer Portfolio', href: 'https://alfianwebporto.framer.website/', external: true },
         { label: '089677618211', href: 'tel:089677618211' },
         { label: 'alfianzarif311@gmail.com', href: 'mailto:alfianzarif311@gmail.com' },
       ],
