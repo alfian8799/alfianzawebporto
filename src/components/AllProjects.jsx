@@ -10,6 +10,11 @@ const projects = Object.values(projectsData).filter(
   (project) => !project.uiUxPortfolio,
 );
 
+const getProjectDescription = (description, lang) => {
+  if (typeof description === "string") return description;
+  return description?.[lang] ?? description?.id ?? description?.en ?? "";
+};
+
 export const AllProjects = () => {
   const { lang } = useLanguage();
   const [active, setActive] = useState("All");
@@ -166,7 +171,7 @@ export const AllProjects = () => {
 
                     {/* Description */}
                     <p className="text-sm font-normal text-zinc-600 dark:text-zinc-400 line-clamp-2 leading-relaxed mt-2 mb-4">
-                      {project.desc?.[lang] ?? project.desc}
+                      {getProjectDescription(project.desc, lang)}
                     </p>
                   </div>
 
