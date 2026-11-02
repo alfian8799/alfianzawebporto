@@ -73,6 +73,7 @@ const ProjectDetail = () => {
   const scopeList = Array.isArray(project.scopeOfWork)
     ? project.scopeOfWork
     : project.scopeOfWork?.[lang] || project.scopeOfWork?.["id"] || [];
+  const scopeSections = project.scopeSections || [];
 
   // Ambil 2 proyek lain untuk rekomendasi
   const otherProjects = Object.entries(projectsData)
@@ -111,12 +112,16 @@ const ProjectDetail = () => {
               </p>
             )}
             <div className="flex flex-wrap items-center gap-3 mb-4">
-              <span className="text-xs font-mono uppercase tracking-widest text-[#ff4a22] bg-[#ff4a22]/10 px-3 py-1 rounded-full font-bold">
-                {project.role}
-              </span>
-              <span className="text-xs font-mono text-zinc-500 border border-zinc-200 dark:border-zinc-800 px-3 py-1 rounded-full">
-                {project.year}
-              </span>
+              {project.role && (
+                <span className="text-xs font-mono uppercase tracking-widest text-[#ff4a22] bg-[#ff4a22]/10 px-3 py-1 rounded-full font-bold">
+                  {project.role}
+                </span>
+              )}
+              {project.year && (
+                <span className="text-xs font-mono text-zinc-500 border border-zinc-200 dark:border-zinc-800 px-3 py-1 rounded-full">
+                  {project.year}
+                </span>
+              )}
               {project.category && (
                 <span className="text-xs font-mono uppercase tracking-wider text-zinc-500 dark:text-zinc-400 bg-zinc-200/60 dark:bg-zinc-800/60 px-3 py-1 rounded-full">
                   {project.category}
@@ -161,72 +166,187 @@ const ProjectDetail = () => {
                 <FadeIn>
                   <section className="space-y-5">
                     <h2 className="text-xs font-mono uppercase tracking-widest text-[#ff4a22] font-semibold">
-                      {lang === "en" ? "Project Description" : "Deskripsi"}
+                      {project.descriptionTitle ||
+                        (lang === "en" ? "Project Description" : "Deskripsi")}
                     </h2>
-                    <p className="text-zinc-700 dark:text-zinc-200 leading-relaxed text-lg">
+                    <p className="whitespace-pre-line text-zinc-700 dark:text-zinc-200 leading-relaxed text-lg">
                       {getLocalizedText(project.overview)}
                     </p>
-                    {project.overviewDetail && (
-                      <p className="text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                    {project.projectFacts ? (
+                      <div className="space-y-3 border-t border-zinc-200/70 pt-5 text-sm leading-relaxed text-zinc-600 dark:border-zinc-800/70 dark:text-zinc-300">
+                        <p>
+                          <span className="font-semibold text-zinc-800 dark:text-zinc-100">
+                            Dataset Sumber:
+                          </span>{" "}
+                          {project.projectFacts.datasetSource}
+                        </p>
+                        <div>
+                          <p>
+                            <span className="font-semibold text-zinc-800 dark:text-zinc-100">
+                              Jumlah Kelas:
+                            </span>{" "}
+                            {project.projectFacts.classCount}
+                          </p>
+                          <ol className="mt-1 grid grid-cols-2 gap-x-4 gap-y-1 pl-5">
+                            {project.projectFacts.classes.map((game) => (
+                              <li key={game} className="list-decimal">
+                                {game}
+                              </li>
+                            ))}
+                          </ol>
+                        </div>
+                        <p>
+                          <span className="font-semibold text-zinc-800 dark:text-zinc-100">
+                            Total Data:
+                          </span>{" "}
+                          {project.projectFacts.totalData}
+                        </p>
+                        <p>
+                          <span className="font-semibold text-zinc-800 dark:text-zinc-100">
+                            Arsitektur Utama:
+                          </span>{" "}
+                          {project.projectFacts.architecture}
+                        </p>
+                      </div>
+                    ) : project.overviewDetail ? (
+                      <p className="whitespace-pre-line text-zinc-500 dark:text-zinc-400 leading-relaxed">
                         {getLocalizedText(project.overviewDetail)}
                       </p>
-                    )}
+                    ) : null}
                   </section>
                 </FadeIn>
-                {project.outcome && (
+                {(project.outcome || project.projectMetrics) && (
                   <FadeIn>
                     <section className="space-y-4 border-t border-zinc-200/70 pt-7 dark:border-zinc-800/70">
                       <h2 className="text-xs font-mono uppercase tracking-widest text-[#ff4a22] font-semibold">
-                        {lang === "en" ? "Results" : "Hasil"}
+                        {project.outcomeTitle ||
+                          (lang === "en" ? "Results" : "Hasil")}
                       </h2>
-                      <p className="text-zinc-700 dark:text-zinc-200 leading-relaxed text-lg">
-                        {getLocalizedText(project.outcome)}
-                      </p>
+                      {project.projectMetrics ? (
+                        <>
+                          <div className="space-y-2 text-sm text-zinc-700 dark:text-zinc-200">
+                            {project.projectMetrics.map((metric) => (
+                              <p key={metric.label}>
+                                <span className="text-zinc-500 dark:text-zinc-400">
+                                  {metric.label}
+                                  :
+                                </span>{" "}
+                                <span className="font-semibold text-zinc-900 dark:text-white">
+                                  {metric.value}
+                                </span>
+                              </p>
+                            ))}
+                          </div>
+                          <h3 className="pt-1 text-sm font-semibold text-zinc-800 dark:text-zinc-200">
+                            Model Formats & Deliverables (Tersimpan dalam ZIP
+                            Submission)
+                          </h3>
+                          <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
+                            {project.projectDeliverables.map((item) => (
+                              <li key={item.name}>
+                                <code className="break-all font-semibold text-zinc-800 dark:text-zinc-100">
+                                  {item.name}
+                                </code>
+                                {" "}({item.description})
+                              </li>
+                            ))}
+                          </ul>
+                        </>
+                      ) : (
+                        <p className="whitespace-pre-line text-zinc-700 dark:text-zinc-200 leading-relaxed text-lg">
+                          {getLocalizedText(project.outcome)}
+                        </p>
+                      )}
                     </section>
                   </FadeIn>
                 )}
               </div>
 
               <div className="space-y-10 lg:border-l lg:border-zinc-200/70 lg:dark:border-zinc-800/70 lg:pl-10">
-                {scopeList.length > 0 && (
+                {(scopeSections.length > 0 || scopeList.length > 0) && (
                   <FadeIn>
                     <section className="space-y-5">
                       <h2 className="text-xs font-mono uppercase tracking-widest text-[#ff4a22] font-semibold flex items-center gap-2">
                         <Layers className="w-4 h-4" />
-                        {t("projectDetail", "responsibilities", lang) || "Key Responsibilities"}
+                        {project.scopeTitle ||
+                          t("projectDetail", "responsibilities", lang) ||
+                          "Key Responsibilities"}
                       </h2>
-                      <ul className="flex flex-col gap-4">
-                        {scopeList.map((item, i) => (
-                          <li
-                            key={i}
-                            className="flex items-start gap-3 text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed"
-                          >
-                            <CheckCircle2 className="w-4 h-4 text-[#ff4a22] shrink-0 mt-0.5" />
-                            <span>{item}</span>
-                          </li>
-                        ))}
-                      </ul>
+                      {scopeSections.length > 0 ? (
+                        <div className="space-y-6">
+                          {scopeSections.map((section) => (
+                            <div key={section.title}>
+                              <h3 className="mb-2 text-sm font-semibold leading-relaxed text-zinc-800 dark:text-zinc-100">
+                                {section.title}
+                              </h3>
+                              <ul className="space-y-2.5 border-l border-zinc-200 pl-4 dark:border-zinc-700">
+                                {section.items.map((item) => (
+                                  <li
+                                    key={item}
+                                    className="relative text-sm leading-relaxed text-zinc-600 before:absolute before:-left-[1.32rem] before:top-[0.65rem] before:h-1.5 before:w-1.5 before:rounded-full before:bg-[#ff4a22] dark:text-zinc-300"
+                                  >
+                                    {item}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <ul className="flex flex-col gap-4">
+                          {scopeList.map((item, i) => (
+                            <li
+                              key={i}
+                              className="flex items-start gap-3 text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed"
+                            >
+                              <CheckCircle2 className="w-4 h-4 text-[#ff4a22] shrink-0 mt-0.5" />
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </section>
                   </FadeIn>
                 )}
 
-                {project.stack && project.stack.length > 0 && (
+                {((project.stack && project.stack.length > 0) ||
+                  (project.toolGroups && project.toolGroups.length > 0)) && (
                   <FadeIn>
                     <section className="space-y-5 border-t border-zinc-200/70 dark:border-zinc-800/70 pt-7">
                       <h2 className="text-xs font-mono uppercase tracking-widest text-[#ff4a22] font-semibold flex items-center gap-2">
                         <Wrench className="w-4 h-4" />
-                        {lang === "en" ? "Software & Tools" : "Software & Tools"}
+                        {project.stackTitle ||
+                          (lang === "en" ? "Software & Tools" : "Software & Tools")}
                       </h2>
-                      <ul className="flex flex-wrap gap-x-5 gap-y-3">
-                        {project.stack.map((tool) => (
-                          <li
-                            key={tool}
-                            className="text-sm text-zinc-700 dark:text-zinc-300"
-                          >
-                            {tool}
-                          </li>
-                        ))}
-                      </ul>
+                      {project.toolGroups ? (
+                        <div className="space-y-4">
+                          {project.toolGroups.map((group) => (
+                            <div key={group.title}>
+                              <h3 className="mb-1 text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+                                {group.title}
+                              </h3>
+                              <ul className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-zinc-700 dark:text-zinc-300">
+                                {group.items.map((tool) => (
+                                  <li key={tool} className="leading-relaxed">
+                                    {tool}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <ul className="flex flex-wrap gap-x-5 gap-y-3">
+                          {project.stack.map((tool) => (
+                            <li
+                              key={tool}
+                              className="text-sm text-zinc-700 dark:text-zinc-300"
+                            >
+                              {tool}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </section>
                   </FadeIn>
                 )}

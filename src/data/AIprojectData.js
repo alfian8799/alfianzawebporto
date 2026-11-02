@@ -1,4 +1,125 @@
 export const aiProjectRecords = {
+  "game-popular-gameplay-classification": {
+    slug: "game-popular-gameplay-classification",
+    title: "Proyek klasifikasi Gambar: Game Popular Gameplay Classification",
+    category: "AI",
+    image: "/images/projects/klasifikasigambargame/klasifikasigambargame.webp",
+    descriptionTitle: "📝 Deskripsi Proyek",
+    outcomeTitle: "🏆 Hasil Proyek (Key Metrics & Deliverables)",
+    scopeTitle: "🛠️ Peran & Tanggung Jawab (What You Did)",
+    stackTitle: "💻 Software & Tools",
+    desc: {
+      id: "Proyek ini adalah sistem klasifikasi gambar berbasis Deep Learning yang dirancang untuk mengidentifikasi dan mengelompokkan tangkapan layar (gameplay) dari 5 video game populer secara otomatis. Proyek ini diselesaikan menggunakan pendekatan Transfer Learning guna memastikan performa tinggi dengan waktu latih yang efisien, serta diekspor ke berbagai format distribusi modern (TF-Lite, TFJS, SavedModel) untuk mendukung deployment multiplatform (Mobile, Web, dan Edge).",
+    },
+    overview: {
+      id: "Proyek ini adalah sistem klasifikasi gambar berbasis Deep Learning yang dirancang untuk mengidentifikasi dan mengelompokkan tangkapan layar (gameplay) dari 5 video game populer secara otomatis. Proyek ini diselesaikan menggunakan pendekatan Transfer Learning guna memastikan performa tinggi dengan waktu latih yang efisien, serta diekspor ke berbagai format distribusi modern (TF-Lite, TFJS, SavedModel) untuk mendukung deployment multiplatform (Mobile, Web, dan Edge).",
+    },
+    projectFacts: {
+      datasetSource: "Gameplay Images (Kaggle)",
+      classCount: "5 Kategori Game Utama",
+      classes: [
+        "God of War",
+        "Fortnite",
+        "Genshin Impact",
+        "Apex Legends",
+        "Forza Horizon",
+      ],
+      totalData:
+        "5.000 gambar asli dengan resolusi awal tidak seragam, didistribusikan merata (masing-masing 1.000 gambar per kelas).",
+      architecture:
+        "MobileNetV2 (Pre-trained on ImageNet) dengan Custom Dense Head.",
+    },
+    projectMetrics: [
+      { label: "Akurasi Evaluasi (Test Set)", value: "95.60%" },
+      { label: "Loss Akhir (Test Set)", value: "0.1121" },
+    ],
+    projectDeliverables: [
+      {
+        name: "saved_model/",
+        description:
+          "Format asli TensorFlow SavedModel untuk sisi server/deployment awan.",
+      },
+      {
+        name: "tflite/model.tflite & label.txt",
+        description:
+          "Optimasi model ringan untuk integrasi Android/iOS/IoT.",
+      },
+      {
+        name: "tfjs_model/model.json + shards",
+        description:
+          "Model web terkompresi untuk eksekusi sisi klien/browser menggunakan TensorFlow.js.",
+      },
+      {
+        name: "requirements.txt & README.md",
+        description: "Dokumentasi dependensi proyek.",
+      },
+    ],
+    scopeSections: [
+      {
+        title: "Data Curation & Preprocessing",
+        items: [
+          "Mengunduh dan menyaring dataset berkapasitas besar untuk mempertahankan 5 kelas utama secara eksklusif.",
+          "Melakukan pembagian dataset secara acak dan terstruktur (random seeded splitting) dengan rasio 80% Train (4.000 gambar), 10% Validation (500 gambar), dan 10% Test (500 gambar).",
+          "Membuktikan ketangguhan model terhadap variabilitas gambar asli dengan memvalidasi keberagaman dimensi (non-uniform resolution) dan variasi rotasi sampel gambar.",
+          "Data Augmentation: Menerapkan taktik augmentasi real-time pada generator latihan (rotation_range=30, width/height_shift, shear_range, zoom_range, dan horizontal_flip) untuk mencegah overfitting.",
+        ],
+      },
+      {
+        title: "Model Development (Transfer Learning)",
+        items: [
+          "Mengintegrasikan arsitektur MobileNetV2 sebagai ekstraktor fitur inti dengan status frozen weights.",
+          "Menambahkan pooling global (GlobalAveragePooling2D), regularisasi (Dropout 40%), dan layer klasifikasi Dense multi-kelas dengan aktivasi Softmax.",
+        ],
+      },
+      {
+        title: "Callbacks Implementation",
+        items: [
+          "Mengonfigurasi EarlyStopping berbasis akurasi validasi serta ReduceLROnPlateau untuk menurunkan learning rate secara dinamis saat grafik loss mendatar.",
+        ],
+      },
+      {
+        title: "Multi-Format Export & Inference Verification",
+        items: [
+          "Membangun pipeline konversi mandiri untuk mengekspor model ke format SavedModel, TF-Lite, dan TensorFlow.js.",
+          "Melakukan uji coba inferensi langsung (isolated testing) menggunakan interpreter TensorFlow Lite dengan memuat file .tflite dari penyimpanan lokal untuk mensimulasikan deployment nyata.",
+        ],
+      },
+    ],
+    repo: "https://github.com/alfian8799/ProjekKlasifikasiGambar.git",
+    demo: "https://colab.research.google.com/drive/1IP77zzlp86JjJgrWsUrNtLY-V1mkfsuW?usp=sharing",
+    tags: ["Python 3", "TensorFlow 2.x", "Keras"],
+    toolGroups: [
+      { title: "Bahasa Pemrograman", items: ["Python 3"] },
+      { title: "Framework Utama", items: ["TensorFlow 2.x"] },
+      {
+        title: "Modul Ekspor Web",
+        items: ["TensorFlow.js Converter (tensorflowjs CLI)"],
+      },
+      {
+        title: "Library Pendukung",
+        items: [
+          "NumPy & Pillow (Pemrosesan data array dan manipulasi gambar asli)",
+          "Matplotlib (Visualisasi metrik performa & distribusi data)",
+          "Kagglehub (Akuisisi dataset terotomatisasi)",
+          "Zipfile & Shutil (Manajemen berkas dan otomatisasi ekspor submission)",
+        ],
+      },
+    ],
+    keywords: ["AI"],
+    gallery: [
+      "/images/projects/klasifikasigambargame/klasifikasigambargame1.webp",
+      "/images/projects/klasifikasigambargame/klasifikasigambargame2.webp",
+      "/images/projects/klasifikasigambargame/klasifikasigambargame3.webp",
+      "/images/projects/klasifikasigambargame/klasifikasigambargame4.webp",
+      "/images/projects/klasifikasigambargame/klasifikasigambargame5.webp",
+      "/images/projects/klasifikasigambargame/klasifikasigambargame6.webp",
+    ],
+  },
+
+
+
+
+
   "hayday-sentiment-analysis": {
     slug: "hayday-sentiment-analysis",
     title:

@@ -143,13 +143,21 @@ export const AllProjects = () => {
                 <div className="flex flex-col flex-1 justify-between">
                   <div>
                     {/* Editorial Meta Bar (Role | Year) */}
-                    <div className="flex items-center gap-2 text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-2">
-                      <span className="font-semibold text-zinc-700 dark:text-zinc-300">
-                        {project.role}
-                      </span>
-                      <span className="text-zinc-300 dark:text-zinc-700">|</span>
-                      <span>{project.year}</span>
-                    </div>
+                    {(project.role || project.year) && (
+                      <div className="flex items-center gap-2 text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-2">
+                        {project.role && (
+                          <span className="font-semibold text-zinc-700 dark:text-zinc-300">
+                            {project.role}
+                          </span>
+                        )}
+                        {project.role && project.year && (
+                          <span className="text-zinc-300 dark:text-zinc-700">
+                            |
+                          </span>
+                        )}
+                        {project.year && <span>{project.year}</span>}
+                      </div>
+                    )}
 
                     {/* Title */}
                     <h3 className="text-xl font-bold tracking-tight text-zinc-900 dark:text-[#faf9f6] group-hover:text-[#ff4a22] transition-colors duration-300 leading-snug">
