@@ -28,7 +28,7 @@ export const CertificationMarquee = () => {
                 {t("certifications", "honors", lang)
               .split("")
               .map((char, i) =>
-                char === "." || char === "?" ? (
+                char === "." || char === "?" || char === "&" ? (
                   <span key={i} className="text-[#ff4a22]">
                     {char}
                   </span>

@@ -22,6 +22,7 @@ export const FeaturedProjects = () => {
   ].filter(Boolean);
 
   const { lang } = useLanguage();
+  const featuredTitle = t("featuredProjects", "title", lang);
 
   return (
     <section ref={sectionRef} id="projects" className="max-w-7xl mx-auto px-6 py-28">
@@ -31,7 +32,7 @@ export const FeaturedProjects = () => {
             {t('featuredProjects', 'tag', lang)}
           </p>
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight text-zinc-900 dark:text-[#faf9f6]">
-            {t("featuredProjects", "title", lang)
+            {featuredTitle
               .split("")
               .map((char, i) =>
                 char === "." || char === "?" ? (
@@ -42,6 +43,9 @@ export const FeaturedProjects = () => {
                   char
                 ),
               )}
+            {!/[.?]$/.test(featuredTitle) && (
+              <span className="text-[#ff4a22]">.</span>
+            )}
           </h2>
         </div>
       </FadeIn>

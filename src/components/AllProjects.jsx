@@ -25,6 +25,7 @@ export const AllProjects = () => {
     { key: "Web", label: "Web" },
     { key: "app", label: "App" },
     { key: "game", label: "Game" },
+    { key: "AI", label: "AI" },
   ];
 
   const visible = useMemo(

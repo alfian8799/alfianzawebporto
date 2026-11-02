@@ -27,9 +27,9 @@ export const Hero = () => {
           <div className="space-y-7 lg:col-span-7 lg:space-y-8">
             <FadeIn delay={0.05}>
               <p className="flex w-full flex-wrap items-center justify-between gap-x-6 gap-y-2 text-sm font-bold leading-relaxed text-[#ff4a22] md:text-base">
-                {hero.roleLine.split(" + ").map((role, index) => (
+                {hero.roleLine.split(" + ").map((role) => (
                   <span key={role} className="inline-flex items-center gap-2">
-                    {index > 0 && <span aria-hidden="true">+</span>}
+                    <span aria-hidden="true">+</span>
                     {role}
                   </span>
                 ))}
