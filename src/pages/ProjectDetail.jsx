@@ -152,7 +152,7 @@ const ProjectDetail = () => {
               src={project.image || "/images/placeholder.webp"}
               alt={project.title}
               onError={handleImageError}
-              className="block h-auto max-h-[80vh] max-w-full w-auto object-contain"
+              className="block h-auto w-full max-w-full object-contain"
             />
           </button>
         </FadeIn>

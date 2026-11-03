@@ -148,19 +148,25 @@ export const AllProjects = () => {
                 <div className="flex flex-col flex-1 justify-between">
                   <div>
                     {/* Editorial Meta Bar (Role | Year) */}
-                    {(project.role || project.year) && (
+                    {(project.role || project.year || project.category) && (
                       <div className="flex items-center gap-2 text-xs font-mono text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-2">
                         {project.role && (
                           <span className="font-semibold text-zinc-700 dark:text-zinc-300">
                             {project.role}
                           </span>
                         )}
-                        {project.role && project.year && (
+                        {project.role && (project.year || project.category) && (
                           <span className="text-zinc-300 dark:text-zinc-700">
                             |
                           </span>
                         )}
                         {project.year && <span>{project.year}</span>}
+                        {project.year && project.category && (
+                          <span className="text-zinc-300 dark:text-zinc-700">
+                            |
+                          </span>
+                        )}
+                        {project.category && <span>{project.category}</span>}
                       </div>
                     )}
 

@@ -1,8 +1,75 @@
 export const aiProjectRecords = {
+  vinzzre: {
+    slug: "vinzzre",
+    title: "VinzzRE: AI Tactical Survival Assistant",
+    subtitle: "RAG Assistant for Survival-Horror Games",
+    category: "AI",
+    role: "AI / RAG Developer",
+    year: "2026",
+    status: "Functional Prototype",
+    image: "/images/projects/vinzzre/vinzzre.webp",
+    descriptionTitle: "Deskripsi Proyek / Project Description",
+    outcomeTitle: "Hasil Proyek / Project Outcomes",
+    scopeTitle: "Peran & Tanggung Jawab / Role & Responsibilities",
+    stackTitle: "Software & Tools",
+    desc: {
+      en: "A retrieval-augmented assistant that helps survival-horror players find grounded walkthroughs, puzzle solutions, and tactical advice.",
+      id: "Asisten berbasis retrieval-augmented generation yang membantu pemain survival-horror menemukan panduan, solusi teka-teki, dan saran taktis berdasarkan dokumen.",
+    },
+    overview: {
+      en: "VinzzRE is an interactive RAG prototype for tactical survival-horror games such as Resident Evil. It indexes PDF survival guides in Astra DB and retrieves relevant passages through semantic search. IBM Langflow orchestrates document processing and question answering, while IBM Bob provides the chat interface through the Model Context Protocol (MCP).",
+      id: "VinzzRE adalah prototipe RAG interaktif untuk gim tactical survival-horror seperti Resident Evil. Sistem mengindeks dokumen survival guide berformat PDF ke Astra DB, lalu mengambil bagian yang relevan melalui pencarian semantik. IBM Langflow mengatur pemrosesan dokumen dan alur tanya jawab, sementara IBM Bob menjadi antarmuka percakapan melalui Model Context Protocol (MCP).",
+    },
+    overviewDetail: {
+      en: "The workflow splits guide content into searchable text chunks, creates embeddings for vector search, and passes retrieved context to an LLM. Its prompt instructs the assistant to answer with concise tactical steps based on the provided guide context and to say when the retrieved material does not contain an answer.",
+      id: "Alur kerja memecah isi panduan menjadi potongan teks yang dapat dicari, membuat embedding untuk pencarian vektor, lalu mengirimkan konteks hasil retrieval ke LLM. Prompt mengarahkan asisten untuk menjawab dengan langkah taktis yang ringkas berdasarkan konteks panduan dan menyatakan jika informasi yang dibutuhkan tidak ditemukan.",
+    },
+    scopeOfWork: {
+      en: [
+        "Designed a RAG workflow to process PDF survival guides and prepare their content for retrieval.",
+        "Configured text splitting, embeddings, and vector storage in Astra DB.",
+        "Built semantic retrieval to find guide passages relevant to player questions.",
+        "Wrote a focused prompt for boss strategies, puzzles, exploration, and resource management, including guidance to avoid unsupported answers.",
+        "Connected the IBM Langflow workflow to the IBM Bob chat interface through MCP.",
+        "Tested the prototype with tactical combat questions and refined the answer format for quick scanning during gameplay.",
+      ],
+      id: [
+        "Merancang alur RAG untuk memproses dokumen survival guide berformat PDF dan menyiapkan kontennya agar dapat dicari.",
+        "Mengatur pemecahan teks, embedding, dan penyimpanan vektor di Astra DB.",
+        "Membangun pencarian semantik untuk menemukan bagian panduan yang relevan dengan pertanyaan pemain.",
+        "Menyusun prompt untuk strategi boss, teka-teki, eksplorasi, dan manajemen sumber daya, termasuk arahan agar asisten tidak memberikan jawaban tanpa dukungan konteks.",
+        "Menghubungkan workflow IBM Langflow dengan antarmuka percakapan IBM Bob melalui MCP.",
+        "Menguji prototipe dengan skenario pertanyaan taktis seputar pertempuran dan merapikan format jawaban agar mudah dipindai saat bermain.",
+      ],
+    },
+    outcome: {
+      en: "Delivered a functional RAG prototype that retrieves guide context and presents tactical answers in scannable bullet points. The prompt is designed to keep responses grounded in retrieved guide content and to acknowledge when the available context is insufficient.",
+      id: "Menghasilkan prototipe RAG fungsional yang mengambil konteks dari panduan dan menyajikan jawaban taktis dalam poin-poin yang mudah dipindai. Prompt dirancang agar jawaban mengacu pada konteks panduan yang ditemukan dan mengakui ketika informasi yang tersedia belum mencukupi.",
+    },
+    tags: ["RAG", "IBM Langflow", "Astra DB", "IBM Bob", "MCP", "LLM"],
+    stack: [
+      "IBM Langflow",
+      "Astra DB",
+      "IBM Bob",
+      "Model Context Protocol (MCP)",
+      "LLM & Embeddings",
+      "PDF Survival Guides",
+    ],
+    keywords: ["AI"],
+    gallery: [
+      "/images/projects/vinzzre/vinzzre1.webp",
+      "/images/projects/vinzzre/vinzzre2.webp",
+      "/images/projects/vinzzre/vinzzre3.webp",
+      "/images/projects/vinzzre/vinzzre4.webp",
+    ],
+  },
+
   "game-popular-gameplay-classification": {
     slug: "game-popular-gameplay-classification",
     title: "Proyek klasifikasi Gambar: Game Popular Gameplay Classification",
     category: "AI",
+    role: "AI / Computer Vision Developer",
+    year: "2026",
     image: "/images/projects/klasifikasigambargame/klasifikasigambargame.webp",
     descriptionTitle: "📝 Deskripsi Proyek",
     outcomeTitle: "🏆 Hasil Proyek (Key Metrics & Deliverables)",
@@ -41,8 +108,7 @@ export const aiProjectRecords = {
       },
       {
         name: "tflite/model.tflite & label.txt",
-        description:
-          "Optimasi model ringan untuk integrasi Android/iOS/IoT.",
+        description: "Optimasi model ringan untuk integrasi Android/iOS/IoT.",
       },
       {
         name: "tfjs_model/model.json + shards",
@@ -116,17 +182,13 @@ export const aiProjectRecords = {
     ],
   },
 
-
-
-
-
   "hayday-sentiment-analysis": {
     slug: "hayday-sentiment-analysis",
     title:
       "Analisis Sentimen Ulasan Game Hay Day Menggunakan Machine Learning & Deep Learning",
     subtitle: "Indonesian Review Sentiment Classification",
     category: "AI",
-    role: "Machine Learning & NLP Engineer",
+    role: "AI Machine Learning & NLP Engineer",
     year: "2026",
     status: "Completed",
     image:
