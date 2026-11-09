@@ -77,6 +77,20 @@ export const certificatesData = [
     image: "/images/certificates/BelajarDasarAI.webp",
   },
   {
+    id: "machine-learning-untuk-pemula",
+    title: "Belajar Machine Learning untuk Pemula",
+    issuer: "Dicoding",
+    date: "15 September 2026",
+    image: "/images/certificates/MachineLearning.webp",
+  },
+  {
+    id: "fundamental-deep-learning",
+    title: "Belajar Fundamental Deep Learning",
+    issuer: "Dicoding",
+    date: "23 Oktober 2026",
+    image: "/images/certificates/FundamentalDeepLearning.webp",
+  },
+  {
     id: "prompt-engineering",
     title: "Prompt Engineering untuk Software Developer",
     issuer: "Dicoding",
