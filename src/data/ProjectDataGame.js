@@ -51,8 +51,72 @@ immunoblitz: {
     ],
   },
 
-
-
+gelapgulita: {
+    slug: "gelapgulita",
+    title: "Gelap Gulita",
+    subtitle: "2D Horror Adventure Game",
+    category: "PC Game",
+    role: "Game Designer & 2D Artist",
+    year: "2024",
+    status: "Released",
+    image: "/images/projects/gelapgulita/gelapgulita.webp",
+    midImage: "/images/projects/gelapgulita/gelapgulita.webp",
+    desc: {
+      en: "A horror adventure game about Bima, a horror YouTuber exploring Mandala Bakti Psychiatric Hospital, where a routine content hunt turns into a fight for survival.",
+      id: "Gim horror adventure tentang Bima, seorang YouTuber horor yang menjelajahi Rumah Sakit Jiwa Mandala Bakti. Misi mencari konten biasa berubah menjadi perjuangan untuk bertahan hidup.",
+    },
+    overview: {
+      en: "Developed during the IGDX Bootcamp 2024 incubation program, Gelap Gulita follows Bima as he explores Mandala Bakti Psychiatric Hospital to create his latest video. As he uncovers the hospital's dark secrets, his content mission becomes a desperate struggle to survive.",
+      id: "Dikembangkan dalam program inkubasi IGDX Bootcamp 2024, Gelap Gulita mengisahkan Bima yang menjelajahi Rumah Sakit Jiwa Mandala Bakti untuk membuat konten terbarunya. Saat mengungkap rahasia kelam rumah sakit, misi tersebut berubah menjadi perjuangan untuk bertahan hidup.",
+    },
+    overviewDetail: {
+      en: "Created the Game Design Document (GDD) and Art Design Document (ADD), designed core horror gameplay mechanics and the visual direction, developed 2D character concept art, and designed UI/UX wireframes, mockups, and an interactive prototype. Implemented the game UI in Unity and collaborated with the project manager, artists, and programmers.",
+      id: "Menyusun Game Design Document (GDD) dan Art Design Document (ADD), merancang mekanik gameplay horor utama dan visi estetika, membuat konsep seni karakter 2D, serta merancang wireframe, mockup, dan prototipe interaktif UI/UX. Mengimplementasikan UI gim di Unity dan berkolaborasi dengan project manager, artist, serta programmer.",
+    },
+    scopeOfWork: {
+      en: [
+        "Game Design Document (GDD) & Art Design Document (ADD)",
+        "Horror Gameplay Mechanics & Visual Direction",
+        "2D Character Concept Art",
+        "UI/UX Wireframes, Mockups & Interactive Prototype",
+        "Unity UI Implementation",
+        "Cross-Discipline Collaboration",
+      ],
+      id: [
+        "Game Design Document (GDD) & Art Design Document (ADD)",
+        "Mekanik Gameplay Horor & Visi Estetika",
+        "Konsep Seni Karakter 2D",
+        "Wireframe, Mockup & Prototipe Interaktif UI/UX",
+        "Implementasi UI Gim di Unity",
+        "Kolaborasi Lintas Divisi",
+      ],
+    },
+ outcome: {
+  en: "Currently in Beta development, available for play and download on Itch.io.",
+  id: "Saat ini dalam tahap pengembangan Beta, dapat dimainkan dan diunduh di Itch.io.",
+},
+    features: [
+      "Horror adventure",
+      "Horror gameplay mechanics",
+      "Interactive UI/UX prototype",
+    ],
+    repo: "#",
+    game: "https://semangat.itch.io/gelap-gulita",
+    demo: "#",
+    tags: ["Unity", "Miro", "Notion", "Figma", "Adobe Photoshop"],
+    stack: ["Unity Engine", "Miro", "Notion", "Figma", "Adobe Photoshop"],
+    keywords: ["game", "UI/UX"],
+    gallery: [
+      "/images/projects/gelapgulita/gelapgulita1.webp",
+      "/images/projects/gelapgulita/gelapgulita2.webp",
+      "/images/projects/gelapgulita/gelapgulita3.webp",
+      "/images/projects/gelapgulita/gelapgulita4.webp",
+      "/images/projects/gelapgulita/gelapgulita5.webp",
+      "/images/projects/gelapgulita/gelapgulita6.webp",
+      "/images/projects/gelapgulita/gelapgulita7.webp",
+      "/images/projects/gelapgulita/gelapgulita8.webp",
+    ],
+  },
 
 
 
